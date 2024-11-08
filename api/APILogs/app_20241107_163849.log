@@ -1,0 +1,36 @@
+2024-11-07 16:38:53.505 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-07 16:38:53.802 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 16:38:53.805 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 16:38:53.815 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 16:38:53.820 +01:00 [INF] Hosting environment: Development
+2024-11-07 16:38:53.823 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 16:38:54.431 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:38:54.468 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 39.86ms
+2024-11-07 16:38:58.392 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:38:58.394 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 1.7009ms
+2024-11-07 16:41:14.292 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - null null
+2024-11-07 16:41:14.295 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - null null
+2024-11-07 16:41:14.298 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - null null
+2024-11-07 16:41:14.305 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - 307 0 null 12.8586ms
+2024-11-07 16:41:14.305 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - 307 0 null 9.8331ms
+2024-11-07 16:41:14.305 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - 307 0 null 9.9565ms
+2024-11-07 16:41:14.722 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/pizza.jpg - null null
+2024-11-07 16:41:14.722 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/tacos.jpg - null null
+2024-11-07 16:41:14.722 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - null null
+2024-11-07 16:41:14.797 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/tacos.jpg - 404 0 null 74.9924ms
+2024-11-07 16:41:14.798 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/pizza.jpg - 404 0 null 76.4574ms
+2024-11-07 16:41:14.798 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - 404 0 null 76.4262ms
+2024-11-07 16:41:14.799 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/tacos.jpg, Response status code: 404
+2024-11-07 16:41:14.799 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/pizza.jpg, Response status code: 404
+2024-11-07 16:41:14.799 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/fishandchips.jpg, Response status code: 404
+2024-11-07 16:41:18.994 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:41:18.995 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.4809ms
+2024-11-07 16:41:19.009 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-07 16:41:19.015 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-07 16:41:19.053 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-07 16:41:19.196 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-07 16:41:19.242 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 183.6309ms
+2024-11-07 16:41:19.242 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-07 16:41:19.253 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 200 null application/json; charset=utf-8 244.2461ms
+2024-11-07 16:42:13.893 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - null null
+2024-11-07 16:42:13.893 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - 307 0 null 0.4593ms

@@ -1,0 +1,146 @@
+2024-11-07 22:51:40.047 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 22:51:40.062 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 22:51:40.075 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 22:51:40.080 +01:00 [INF] Hosting environment: Development
+2024-11-07 22:51:40.087 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 22:51:42.739 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 22:51:42.834 +01:00 [INF] CORS policy execution successful.
+2024-11-07 22:51:42.843 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-07 22:51:42.887 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-07 22:51:43.073 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-07 22:51:43.154 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 22:51:43.156 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 261.8125ms
+2024-11-07 22:51:43.157 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-07 22:51:43.160 +01:00 [INF] CORS policy execution successful.
+2024-11-07 22:51:43.161 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-07 22:51:43.162 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-07 22:51:43.166 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 200 null application/json; charset=utf-8 431.6993ms
+2024-11-07 22:51:43.199 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/ribs.jpg - null null
+2024-11-07 22:51:43.198 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/frenchfries.jpg - null null
+2024-11-07 22:51:43.200 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - null null
+2024-11-07 22:51:43.207 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - null null
+2024-11-07 22:51:43.222 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/chickenleg.jpg - null null
+2024-11-07 22:51:43.231 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/chickenleg.jpg - 404 0 null 10.9742ms
+2024-11-07 22:51:43.231 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/ribs.jpg - 404 0 null 36.8173ms
+2024-11-07 22:51:43.231 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - 404 0 null 24.5444ms
+2024-11-07 22:51:43.232 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - 404 0 null 32.2149ms
+2024-11-07 22:51:43.232 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/frenchfries.jpg - 404 0 null 36.9276ms
+2024-11-07 22:51:43.233 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/ribs.jpg, Response status code: 404
+2024-11-07 22:51:43.233 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/frenchfries.jpg, Response status code: 404
+2024-11-07 22:51:43.234 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/chickenleg.jpg, Response status code: 404
+2024-11-07 22:51:43.234 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/tacos.jpg, Response status code: 404
+2024-11-07 22:51:43.234 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/pizza.jpg, Response status code: 404
+2024-11-07 22:51:43.242 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - null null
+2024-11-07 22:51:43.242 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/cider.jpg - null null
+2024-11-07 22:51:43.243 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - 404 0 null 0.7694ms
+2024-11-07 22:51:43.243 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/cider.jpg - 404 0 null 0.7652ms
+2024-11-07 22:51:43.243 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/cider.jpg, Response status code: 404
+2024-11-07 22:51:43.244 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/fishandchips.jpg, Response status code: 404
+2024-11-07 22:51:43.318 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-07 22:51:43.319 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 157.0014ms
+2024-11-07 22:51:43.319 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-07 22:51:43.320 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 200 null application/json; charset=utf-8 165.5841ms
+2024-11-07 22:52:00.228 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - null null
+2024-11-07 22:52:00.229 +01:00 [INF] CORS policy execution successful.
+2024-11-07 22:52:00.231 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - 204 null null 2.1832ms
+2024-11-07 22:52:00.234 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/create - application/json 57
+2024-11-07 22:52:00.234 +01:00 [INF] CORS policy execution successful.
+2024-11-07 22:52:00.235 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.Create (api)'
+2024-11-07 22:52:00.251 +01:00 [INF] Route matched with {action = "Create", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(FoodRegistrationTool.DTOs.ProductDto) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-07 22:52:00.336 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'FoodRegistrationTool.Models.Product'.
+2024-11-07 22:52:00.369 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.Create (api) in 118.3545ms
+2024-11-07 22:52:00.370 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.Create (api)'
+2024-11-07 22:52:00.370 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/create - 201 null application/json; charset=utf-8 136.4373ms
+2024-11-07 22:52:00.391 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 22:52:00.392 +01:00 [INF] CORS policy execution successful.
+2024-11-07 22:52:00.392 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-07 22:52:00.392 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-07 22:52:00.405 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-07 22:52:00.405 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 12.4683ms
+2024-11-07 22:52:00.405 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-07 22:52:00.406 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 200 null application/json; charset=utf-8 14.132ms
+2024-11-07 22:52:00.407 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 22:52:00.407 +01:00 [INF] CORS policy execution successful.
+2024-11-07 22:52:00.408 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-07 22:52:00.408 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-07 22:52:00.419 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-07 22:52:00.420 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 11.8438ms
+2024-11-07 22:52:00.420 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-07 22:52:00.420 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 200 null application/json; charset=utf-8 13.2792ms
+2024-11-07 22:52:00.451 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - null null
+2024-11-07 22:52:00.453 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - 404 0 null 1.4284ms
+2024-11-07 22:52:00.453 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/pizza.jpg, Response status code: 404
+2024-11-07 22:52:00.462 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/chickenleg.jpg - null null
+2024-11-07 22:52:00.463 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/ribs.jpg - null null
+2024-11-07 22:52:00.463 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/frenchfries.jpg - null null
+2024-11-07 22:52:00.464 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/chickenleg.jpg - 404 0 null 1.0499ms
+2024-11-07 22:52:00.464 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/chickenleg.jpg, Response status code: 404
+2024-11-07 22:52:00.464 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/ribs.jpg - 404 0 null 0.6369ms
+2024-11-07 22:52:00.464 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/frenchfries.jpg - 404 0 null 0.6629ms
+2024-11-07 22:52:00.464 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/ribs.jpg, Response status code: 404
+2024-11-07 22:52:00.464 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/frenchfries.jpg, Response status code: 404
+2024-11-07 22:52:00.465 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - null null
+2024-11-07 22:52:00.467 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - 404 0 null 1.4617ms
+2024-11-07 22:52:00.467 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/tacos.jpg, Response status code: 404
+2024-11-07 22:52:00.467 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/cider.jpg - null null
+2024-11-07 22:52:00.468 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - null null
+2024-11-07 22:52:00.469 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/cider.jpg - 404 0 null 1.7695ms
+2024-11-07 22:52:00.470 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/cider.jpg, Response status code: 404
+2024-11-07 22:52:00.470 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - 404 0 null 5.207ms
+2024-11-07 22:52:00.471 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/ - null null
+2024-11-07 22:52:00.471 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/fishandchips.jpg, Response status code: 404
+2024-11-07 22:52:00.472 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/ - 404 0 null 0.6986ms
+2024-11-07 22:52:00.472 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/, Response status code: 404
+2024-11-07 22:52:03.819 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/delete/9 - null null
+2024-11-07 22:52:03.820 +01:00 [INF] CORS policy execution successful.
+2024-11-07 22:52:03.820 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/delete/9 - 204 null null 0.7422ms
+2024-11-07 22:52:03.822 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5194/api/productapi/delete/9 - null null
+2024-11-07 22:52:03.822 +01:00 [INF] CORS policy execution successful.
+2024-11-07 22:52:03.823 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.DeleteConfirmed (api)'
+2024-11-07 22:52:03.830 +01:00 [INF] Route matched with {action = "DeleteConfirmed", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteConfirmed(Int32) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-07 22:52:03.945 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-11-07 22:52:03.945 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.DeleteConfirmed (api) in 114.952ms
+2024-11-07 22:52:03.945 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.DeleteConfirmed (api)'
+2024-11-07 22:52:03.946 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5194/api/productapi/delete/9 - 204 null null 123.7246ms
+2024-11-07 22:52:06.247 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/chickenleg.jpg - null null
+2024-11-07 22:52:06.247 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - null null
+2024-11-07 22:52:06.247 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/frenchfries.jpg - null null
+2024-11-07 22:52:06.248 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/frenchfries.jpg - 404 0 null 1.397ms
+2024-11-07 22:52:06.248 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - 404 0 null 1.1861ms
+2024-11-07 22:52:06.248 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/chickenleg.jpg - 404 0 null 1.6689ms
+2024-11-07 22:52:06.248 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/frenchfries.jpg, Response status code: 404
+2024-11-07 22:52:06.249 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/chickenleg.jpg, Response status code: 404
+2024-11-07 22:52:06.249 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/pizza.jpg, Response status code: 404
+2024-11-07 22:52:06.249 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - null null
+2024-11-07 22:52:06.249 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - null null
+2024-11-07 22:52:06.249 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/ribs.jpg - null null
+2024-11-07 22:52:06.250 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/ribs.jpg - 404 0 null 0.5445ms
+2024-11-07 22:52:06.250 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - 404 0 null 0.4668ms
+2024-11-07 22:52:06.250 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/ribs.jpg, Response status code: 404
+2024-11-07 22:52:06.250 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - 404 0 null 0.5478ms
+2024-11-07 22:52:06.250 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/tacos.jpg, Response status code: 404
+2024-11-07 22:52:06.250 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/fishandchips.jpg, Response status code: 404
+2024-11-07 22:52:06.254 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/cider.jpg - null null
+2024-11-07 22:52:06.255 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/cider.jpg - 404 0 null 0.6745ms
+2024-11-07 22:52:06.255 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/cider.jpg, Response status code: 404
+2024-11-07 22:52:06.902 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - null null
+2024-11-07 22:52:06.903 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/chickenleg.jpg - null null
+2024-11-07 22:52:06.903 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - 404 0 null 1.5173ms
+2024-11-07 22:52:06.903 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/pizza.jpg, Response status code: 404
+2024-11-07 22:52:06.903 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/frenchfries.jpg - null null
+2024-11-07 22:52:06.904 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/chickenleg.jpg - 404 0 null 0.9641ms
+2024-11-07 22:52:06.904 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/chickenleg.jpg, Response status code: 404
+2024-11-07 22:52:06.904 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/frenchfries.jpg - 404 0 null 0.568ms
+2024-11-07 22:52:06.904 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/ribs.jpg - null null
+2024-11-07 22:52:06.904 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/frenchfries.jpg, Response status code: 404
+2024-11-07 22:52:06.904 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - null null
+2024-11-07 22:52:06.904 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/ribs.jpg - 404 0 null 0.2825ms
+2024-11-07 22:52:06.905 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - null null
+2024-11-07 22:52:06.905 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - 404 0 null 0.353ms
+2024-11-07 22:52:06.905 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/ribs.jpg, Response status code: 404
+2024-11-07 22:52:06.905 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/tacos.jpg, Response status code: 404
+2024-11-07 22:52:06.905 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - 404 0 null 0.3821ms
+2024-11-07 22:52:06.905 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/fishandchips.jpg, Response status code: 404
+2024-11-07 22:52:06.909 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/cider.jpg - null null
+2024-11-07 22:52:06.909 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/cider.jpg - 404 0 null 0.5921ms
+2024-11-07 22:52:06.909 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/cider.jpg, Response status code: 404

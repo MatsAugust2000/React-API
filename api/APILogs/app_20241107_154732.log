@@ -1,0 +1,25 @@
+2024-11-07 15:47:33.813 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-07 15:47:34.215 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 15:47:34.218 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 15:47:34.230 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 15:47:34.235 +01:00 [INF] Hosting environment: Development
+2024-11-07 15:47:34.239 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 15:47:42.963 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - null null
+2024-11-07 15:47:42.963 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - null null
+2024-11-07 15:47:42.963 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - null null
+2024-11-07 15:47:43.010 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - 307 0 null 50.955ms
+2024-11-07 15:47:43.010 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - 307 0 null 49.1292ms
+2024-11-07 15:47:43.011 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - 307 0 null 53.4043ms
+2024-11-07 15:47:43.374 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/tacos.jpg - null null
+2024-11-07 15:47:43.374 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - null null
+2024-11-07 15:47:43.374 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/pizza.jpg - null null
+2024-11-07 15:47:43.480 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/pizza.jpg - 404 0 null 105.0666ms
+2024-11-07 15:47:43.488 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/tacos.jpg - 404 0 null 113.7058ms
+2024-11-07 15:47:43.488 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - 404 0 null 113.8013ms
+2024-11-07 15:47:43.488 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/tacos.jpg, Response status code: 404
+2024-11-07 15:47:43.488 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/fishandchips.jpg, Response status code: 404
+2024-11-07 15:47:43.488 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/pizza.jpg, Response status code: 404
+2024-11-07 15:48:00.452 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 15:48:00.453 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.9603ms
+2024-11-07 15:48:00.456 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 15:48:00.456 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.5256ms

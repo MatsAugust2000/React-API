@@ -1,0 +1,22 @@
+2024-11-07 15:56:41.827 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-07 15:56:42.138 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 15:56:42.141 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 15:56:42.150 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 15:56:42.155 +01:00 [INF] Hosting environment: Development
+2024-11-07 15:56:42.157 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 15:56:50.574 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 15:56:50.618 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 46.577ms
+2024-11-07 15:56:54.871 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 15:56:54.872 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 1.3002ms
+2024-11-07 15:57:49.421 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 15:57:49.424 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 2.1833ms
+2024-11-07 15:59:03.099 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 15:59:03.100 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 2.4912ms
+2024-11-07 16:06:17.457 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:06:17.458 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.7391ms
+2024-11-07 16:06:48.449 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:06:48.452 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 2.3172ms
+2024-11-07 16:07:04.429 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:07:04.429 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.3051ms
+2024-11-07 16:07:41.476 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:07:41.476 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.5461ms

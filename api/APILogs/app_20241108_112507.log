@@ -1,0 +1,221 @@
+2024-11-08 11:25:10.751 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-08 11:25:10.768 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-08 11:25:10.782 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-08 11:25:10.792 +01:00 [INF] Hosting environment: Development
+2024-11-08 11:25:10.796 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-08 11:25:11.097 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-08 11:25:11.212 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:11.220 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-08 11:25:11.256 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:11.430 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-08 11:25:11.508 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-08 11:25:11.508 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 238.9637ms
+2024-11-08 11:25:11.509 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-08 11:25:11.513 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:11.514 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-08 11:25:11.514 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:11.516 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 200 null application/json; charset=utf-8 423.5898ms
+2024-11-08 11:25:11.557 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - null null
+2024-11-08 11:25:11.571 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/chickenleg.jpg - null null
+2024-11-08 11:25:11.588 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/frenchfries.jpg - null null
+2024-11-08 11:25:11.597 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - null null
+2024-11-08 11:25:11.641 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - 404 0 null 83.213ms
+2024-11-08 11:25:11.641 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - 404 0 null 45.9944ms
+2024-11-08 11:25:11.641 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/frenchfries.jpg - 404 0 null 56.3241ms
+2024-11-08 11:25:11.641 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/chickenleg.jpg - 404 0 null 69.0897ms
+2024-11-08 11:25:11.642 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/pizza.jpg, Response status code: 404
+2024-11-08 11:25:11.642 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/frenchfries.jpg, Response status code: 404
+2024-11-08 11:25:11.642 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/chickenleg.jpg, Response status code: 404
+2024-11-08 11:25:11.642 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/tacos.jpg, Response status code: 404
+2024-11-08 11:25:11.650 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - null null
+2024-11-08 11:25:11.650 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/cider.jpg - null null
+2024-11-08 11:25:11.650 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - 404 0 null 0.6748ms
+2024-11-08 11:25:11.651 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/fishandchips.jpg, Response status code: 404
+2024-11-08 11:25:11.651 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/cider.jpg - 404 0 null 1.366ms
+2024-11-08 11:25:11.652 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/cider.jpg, Response status code: 404
+2024-11-08 11:25:11.654 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/ribs.jpg - null null
+2024-11-08 11:25:11.660 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/ribs.jpg - 404 0 null 8.1812ms
+2024-11-08 11:25:11.661 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/images/ribs.jpg, Response status code: 404
+2024-11-08 11:25:11.704 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-08 11:25:11.705 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 189.8355ms
+2024-11-08 11:25:11.705 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-08 11:25:11.705 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 200 null application/json; charset=utf-8 197.118ms
+2024-11-08 11:25:26.596 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - null null
+2024-11-08 11:25:26.597 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:26.600 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - 204 null null 3.859ms
+2024-11-08 11:25:26.602 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:25:26.603 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:26.603 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:26.622 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:26.766 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:25:26.768 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 145.3238ms
+2024-11-08 11:25:26.768 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:26.768 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 166.1459ms
+2024-11-08 11:25:27.763 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:25:27.764 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:27.764 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:27.765 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:27.769 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:25:27.771 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 5.6914ms
+2024-11-08 11:25:27.771 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:27.772 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 8.431ms
+2024-11-08 11:25:28.153 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:25:28.157 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:28.157 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:28.158 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:28.158 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:25:28.159 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 1.0137ms
+2024-11-08 11:25:28.159 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:28.159 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 5.6259ms
+2024-11-08 11:25:31.738 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - null null
+2024-11-08 11:25:31.738 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:31.739 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - 204 null null 1.1744ms
+2024-11-08 11:25:31.741 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:25:31.741 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:31.741 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:31.742 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:31.744 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:25:31.744 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 2.2063ms
+2024-11-08 11:25:31.744 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:31.745 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 3.9398ms
+2024-11-08 11:25:34.069 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:25:34.071 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:34.072 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:34.072 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:34.074 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:25:34.074 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 1.6218ms
+2024-11-08 11:25:34.075 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:34.075 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 6.4547ms
+2024-11-08 11:25:37.426 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - null null
+2024-11-08 11:25:37.426 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:37.426 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - 204 null null 0.7546ms
+2024-11-08 11:25:37.428 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:25:37.429 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:37.429 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:37.429 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:37.430 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:25:37.431 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 1.088ms
+2024-11-08 11:25:37.431 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:37.431 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 2.4205ms
+2024-11-08 11:25:48.732 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - null null
+2024-11-08 11:25:48.733 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:48.733 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - 204 null null 1.3199ms
+2024-11-08 11:25:48.735 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:25:48.735 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:48.735 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:48.735 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:48.737 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:25:48.737 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 1.2977ms
+2024-11-08 11:25:48.737 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:48.737 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 2.6952ms
+2024-11-08 11:25:51.022 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:25:51.023 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:51.023 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:51.023 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:51.024 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:25:51.025 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 0.871ms
+2024-11-08 11:25:51.025 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:51.025 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 2.5095ms
+2024-11-08 11:25:53.820 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - null null
+2024-11-08 11:25:53.820 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:53.820 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - 204 null null 0.6488ms
+2024-11-08 11:25:53.823 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:25:53.823 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:53.824 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:53.824 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:53.825 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:25:53.825 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 1.2257ms
+2024-11-08 11:25:53.825 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:53.825 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 2.3742ms
+2024-11-08 11:25:54.030 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:25:54.030 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:54.031 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:54.031 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:54.032 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:25:54.033 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 1.7693ms
+2024-11-08 11:25:54.033 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:54.034 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 3.3945ms
+2024-11-08 11:25:56.513 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:25:56.513 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:56.513 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:56.513 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:56.514 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:25:56.514 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 0.8445ms
+2024-11-08 11:25:56.514 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:56.514 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 1.5337ms
+2024-11-08 11:25:58.550 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:25:58.550 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:25:58.550 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:58.550 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:25:58.551 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:25:58.551 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 0.7283ms
+2024-11-08 11:25:58.551 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:25:58.551 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 1.6216ms
+2024-11-08 11:26:00.484 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - null null
+2024-11-08 11:26:00.485 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:26:00.485 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - 204 null null 0.4001ms
+2024-11-08 11:26:00.487 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 109
+2024-11-08 11:26:00.487 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:26:00.487 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:00.488 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:26:00.489 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:26:00.489 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 1.3619ms
+2024-11-08 11:26:00.489 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:00.489 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 2.4006ms
+2024-11-08 11:26:25.664 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - null null
+2024-11-08 11:26:25.666 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:26:25.666 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - 204 null null 2.0663ms
+2024-11-08 11:26:25.672 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 112
+2024-11-08 11:26:25.674 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:26:25.674 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:25.674 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:26:25.675 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:26:25.675 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 0.9228ms
+2024-11-08 11:26:25.675 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:25.676 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 3.3086ms
+2024-11-08 11:26:28.947 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 115
+2024-11-08 11:26:28.947 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:26:28.947 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:28.947 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:26:28.948 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:26:28.948 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 1.0452ms
+2024-11-08 11:26:28.949 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:28.949 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 2.1109ms
+2024-11-08 11:26:30.992 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - null null
+2024-11-08 11:26:30.992 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:26:30.992 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - 204 null null 0.4949ms
+2024-11-08 11:26:30.994 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 118
+2024-11-08 11:26:30.994 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:26:30.995 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:30.995 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:26:30.996 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:26:30.997 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 1.5492ms
+2024-11-08 11:26:30.997 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:30.997 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 3.1913ms
+2024-11-08 11:26:34.013 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 121
+2024-11-08 11:26:34.016 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:26:34.016 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:34.016 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:26:34.029 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:26:34.029 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 7.9455ms
+2024-11-08 11:26:34.029 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:34.030 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 16.2705ms
+2024-11-08 11:26:36.807 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - null null
+2024-11-08 11:26:36.807 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:26:36.807 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - 204 null null 0.4326ms
+2024-11-08 11:26:36.809 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 123
+2024-11-08 11:26:36.810 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:26:36.810 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:36.810 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:26:36.811 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:26:36.811 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 1.1392ms
+2024-11-08 11:26:36.811 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:36.812 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 2.6321ms
+2024-11-08 11:26:39.167 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 123
+2024-11-08 11:26:39.167 +01:00 [INF] CORS policy execution successful.
+2024-11-08 11:26:39.168 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:39.168 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-08 11:26:39.169 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-08 11:26:39.170 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 1.4378ms
+2024-11-08 11:26:39.170 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-08 11:26:39.170 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 2.9229ms

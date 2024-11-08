@@ -1,0 +1,55 @@
+2024-11-07 12:43:10.638 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-07 12:43:10.868 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 12:43:10.870 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 12:43:10.877 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 12:43:10.881 +01:00 [INF] Hosting environment: Development
+2024-11-07 12:43:10.884 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 12:43:29.746 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/ - null null
+2024-11-07 12:43:29.760 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/ - 307 0 null 16.253ms
+2024-11-07 12:43:29.861 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/ - null null
+2024-11-07 12:43:29.891 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/ - 404 0 null 29.5854ms
+2024-11-07 12:43:29.893 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/, Response status code: 404
+2024-11-07 12:43:38.072 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/ - null null
+2024-11-07 12:43:38.074 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/ - 307 0 null 1.8754ms
+2024-11-07 12:43:38.093 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/ - null null
+2024-11-07 12:43:38.094 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/ - 404 0 null 1.0347ms
+2024-11-07 12:43:38.094 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/, Response status code: 404
+2024-11-07 12:43:51.476 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/ - null null
+2024-11-07 12:43:51.477 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/ - 307 0 null 0.5579ms
+2024-11-07 12:43:51.497 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/ - null null
+2024-11-07 12:43:51.498 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/ - 404 0 null 1.3931ms
+2024-11-07 12:43:51.498 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/, Response status code: 404
+2024-11-07 12:44:21.738 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - null null
+2024-11-07 12:44:21.739 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - 307 0 null 0.828ms
+2024-11-07 12:44:21.747 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - null null
+2024-11-07 12:44:21.747 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - 307 0 null 2.7547ms
+2024-11-07 12:44:21.749 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - null null
+2024-11-07 12:44:21.755 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - 307 0 null 3.9082ms
+2024-11-07 12:44:22.049 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - null null
+2024-11-07 12:44:22.053 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/pizza.jpg - null null
+2024-11-07 12:44:22.053 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/tacos.jpg - null null
+2024-11-07 12:44:22.060 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - 404 0 null 11.3239ms
+2024-11-07 12:44:22.060 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/tacos.jpg - 404 0 null 6.9783ms
+2024-11-07 12:44:22.061 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/fishandchips.jpg, Response status code: 404
+2024-11-07 12:44:22.060 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/pizza.jpg - 404 0 null 11.267ms
+2024-11-07 12:44:22.061 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/tacos.jpg, Response status code: 404
+2024-11-07 12:44:22.061 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/pizza.jpg, Response status code: 404
+2024-11-07 12:44:30.945 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 12:44:30.946 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.831ms
+2024-11-07 12:44:30.948 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 12:44:30.948 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.4749ms
+2024-11-07 12:45:58.504 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - null null
+2024-11-07 12:45:58.505 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - 307 0 null 0.591ms
+2024-11-07 12:46:28.560 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/ - null null
+2024-11-07 12:46:28.566 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/ - 307 0 null 7.3372ms
+2024-11-07 12:46:28.573 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/ - null null
+2024-11-07 12:46:28.573 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/ - 404 0 null 0.6425ms
+2024-11-07 12:46:28.573 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/, Response status code: 404
+2024-11-07 12:50:09.909 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/index.html - null null
+2024-11-07 12:50:09.910 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/index.html - 404 0 null 2.1052ms
+2024-11-07 12:50:09.911 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/swagger/index.html, Response status code: 404
+2024-11-07 12:50:39.368 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/index.html - null null
+2024-11-07 12:50:39.369 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/index.html - 307 0 null 0.6793ms
+2024-11-07 12:50:39.389 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/index.html - null null
+2024-11-07 12:50:39.390 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/index.html - 404 0 null 0.6595ms
+2024-11-07 12:50:39.390 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/swagger/index.html, Response status code: 404

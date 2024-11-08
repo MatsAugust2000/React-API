@@ -1,0 +1,37 @@
+2024-11-07 18:13:49.544 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 18:13:49.554 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 18:13:49.563 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 18:13:49.567 +01:00 [INF] Hosting environment: Development
+2024-11-07 18:13:49.570 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 18:14:33.593 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 18:14:33.638 +01:00 [INF] CORS policy execution successful.
+2024-11-07 18:14:33.677 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 72.8615ms
+2024-11-07 18:14:33.684 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 18:14:33.687 +01:00 [INF] CORS policy execution successful.
+2024-11-07 18:14:33.697 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 4.1488ms
+2024-11-07 18:14:33.944 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-07 18:14:33.948 +01:00 [INF] CORS policy execution successful.
+2024-11-07 18:14:34.070 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-07 18:14:34.078 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 500 null text/plain; charset=utf-8 133.7265ms
+2024-11-07 18:14:34.098 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-07 18:14:34.098 +01:00 [INF] CORS policy execution successful.
+2024-11-07 18:14:34.109 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-07 18:14:34.110 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 500 null text/plain; charset=utf-8 12.2093ms

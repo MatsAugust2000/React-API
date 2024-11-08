@@ -1,0 +1,128 @@
+2024-11-07 17:52:17.413 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 17:52:17.430 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 17:52:17.442 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 17:52:17.446 +01:00 [INF] Hosting environment: Development
+2024-11-07 17:52:17.449 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 17:52:27.258 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 17:52:27.308 +01:00 [INF] CORS policy execution successful.
+2024-11-07 17:52:27.342 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 87.8058ms
+2024-11-07 17:52:27.349 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 17:52:27.354 +01:00 [INF] CORS policy execution successful.
+2024-11-07 17:52:27.364 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 5.7814ms
+2024-11-07 17:52:27.710 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-07 17:52:27.715 +01:00 [INF] CORS policy execution failed.
+2024-11-07 17:52:27.715 +01:00 [INF] Request origin null does not have permission to access the resource.
+2024-11-07 17:52:27.818 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-07 17:52:27.828 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 500 null text/plain; charset=utf-8 117.8709ms
+2024-11-07 17:52:27.850 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-07 17:52:27.850 +01:00 [INF] CORS policy execution failed.
+2024-11-07 17:52:27.850 +01:00 [INF] Request origin null does not have permission to access the resource.
+2024-11-07 17:52:27.894 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-07 17:52:27.896 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 500 null text/plain; charset=utf-8 46.3514ms
+2024-11-07 17:52:30.107 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 17:52:30.107 +01:00 [INF] CORS policy execution successful.
+2024-11-07 17:52:30.108 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.9407ms
+2024-11-07 17:52:30.116 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-07 17:52:30.116 +01:00 [INF] CORS policy execution failed.
+2024-11-07 17:52:30.116 +01:00 [INF] Request origin null does not have permission to access the resource.
+2024-11-07 17:52:30.122 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-07 17:52:30.123 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 500 null text/plain; charset=utf-8 8.1761ms
+2024-11-07 17:53:47.943 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - null null
+2024-11-07 17:53:47.952 +01:00 [INF] CORS policy execution successful.
+2024-11-07 17:53:47.959 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - 204 null null 15.3191ms
+2024-11-07 17:53:47.961 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/create - application/json 61
+2024-11-07 17:53:47.962 +01:00 [INF] CORS policy execution successful.
+2024-11-07 17:53:47.962 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/create - 307 0 null 0.9646ms
+2024-11-07 17:53:47.969 +01:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7263/api/productapi/create - null null
+2024-11-07 17:53:47.970 +01:00 [INF] CORS policy execution failed.
+2024-11-07 17:53:47.970 +01:00 [INF] Request origin null does not have permission to access the resource.
+2024-11-07 17:53:47.973 +01:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7263/api/productapi/create - 204 null null 3.961ms
+2024-11-07 17:55:08.370 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-07 17:55:08.384 +01:00 [INF] CORS policy execution failed.
+2024-11-07 17:55:08.384 +01:00 [INF] Request origin null does not have permission to access the resource.
+2024-11-07 17:55:08.401 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-07 17:55:08.402 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 500 null text/plain; charset=utf-8 32.2483ms
+2024-11-07 17:55:08.406 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-07 17:55:08.406 +01:00 [INF] CORS policy execution failed.
+2024-11-07 17:55:08.407 +01:00 [INF] Request origin null does not have permission to access the resource.
+2024-11-07 17:55:08.423 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-07 17:55:08.425 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 500 null text/plain; charset=utf-8 20.2356ms
+2024-11-07 17:55:10.216 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 17:55:10.216 +01:00 [INF] CORS policy execution successful.
+2024-11-07 17:55:10.217 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.7692ms
+2024-11-07 17:55:10.224 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-07 17:55:10.224 +01:00 [INF] CORS policy execution failed.
+2024-11-07 17:55:10.224 +01:00 [INF] Request origin null does not have permission to access the resource.
+2024-11-07 17:55:10.236 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-07 17:55:10.238 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 500 null text/plain; charset=utf-8 15.0706ms
+2024-11-07 17:55:17.682 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 17:55:17.683 +01:00 [INF] CORS policy execution successful.
+2024-11-07 17:55:17.683 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 1.5873ms
+2024-11-07 17:55:17.692 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-07 17:55:17.693 +01:00 [INF] CORS policy execution failed.
+2024-11-07 17:55:17.693 +01:00 [INF] Request origin null does not have permission to access the resource.
+2024-11-07 17:55:17.698 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-07 17:55:17.700 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 500 null text/plain; charset=utf-8 9.2235ms

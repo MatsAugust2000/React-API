@@ -1,0 +1,10 @@
+2024-11-07 14:38:04.931 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-07 14:38:05.258 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 14:38:05.262 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 14:38:05.273 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 14:38:05.278 +01:00 [INF] Hosting environment: Development
+2024-11-07 14:38:05.282 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 14:38:27.086 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 14:38:27.140 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 56.9484ms
+2024-11-07 14:38:27.192 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 14:38:27.195 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 3.0104ms

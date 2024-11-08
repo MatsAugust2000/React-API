@@ -1,0 +1,30 @@
+2024-11-07 22:34:33.838 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 22:34:33.854 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 22:34:33.868 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 22:34:33.876 +01:00 [INF] Hosting environment: Development
+2024-11-07 22:34:33.881 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 22:34:59.139 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - null null
+2024-11-07 22:34:59.141 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - null null
+2024-11-07 22:34:59.139 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - null null
+2024-11-07 22:34:59.259 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - 307 0 null 124.7507ms
+2024-11-07 22:34:59.259 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - 307 0 null 124.7688ms
+2024-11-07 22:34:59.259 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - 307 0 null 119.2094ms
+2024-11-07 22:34:59.417 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/pizza.jpg - null null
+2024-11-07 22:34:59.417 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - null null
+2024-11-07 22:34:59.417 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/tacos.jpg - null null
+2024-11-07 22:34:59.499 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/pizza.jpg - 404 0 null 81.8088ms
+2024-11-07 22:34:59.499 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - 404 0 null 81.7119ms
+2024-11-07 22:34:59.499 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/tacos.jpg - 404 0 null 81.8156ms
+2024-11-07 22:34:59.503 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/pizza.jpg, Response status code: 404
+2024-11-07 22:34:59.503 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/fishandchips.jpg, Response status code: 404
+2024-11-07 22:34:59.503 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/tacos.jpg, Response status code: 404
+2024-11-07 22:35:02.221 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 22:35:02.223 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 1.0294ms
+2024-11-07 22:35:02.225 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 22:35:02.226 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.5732ms
+2024-11-07 22:35:12.986 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 22:35:12.987 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.4135ms
+2024-11-07 22:35:14.944 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 22:35:14.944 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.5663ms
+2024-11-07 22:36:52.872 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - null null
+2024-11-07 22:36:52.879 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - 307 0 null 6.5728ms

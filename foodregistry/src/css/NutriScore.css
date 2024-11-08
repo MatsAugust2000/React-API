@@ -1,0 +1,45 @@
+.score-a { background-color: #038141; }
+.score-b { background-color: #85BB2F; }
+.score-c { background-color: #FFC800; }
+.score-d { background-color: #FF7F00; }
+.score-e { background-color: #FF0000;}
+
+
+.score-A { background-color: #038141; }
+.score-B { background-color: #85BB2F; }
+.score-C { background-color: #FFC800; }
+.score-D { background-color: #FF7F00; }
+.score-E { background-color: #FF0000;}
+
+
+.nutri-score {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: white;
+    text-transform: uppercase;
+  }
+    
+
+
+  /* Add these to your existing CSS */
+.nutri-score {
+    /* ... existing styles ... */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .nutri-score:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  /* Optional: Add a container for better positioning */
+  .nutri-score-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }

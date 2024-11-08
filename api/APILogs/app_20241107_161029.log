@@ -1,0 +1,47 @@
+2024-11-07 16:10:30.619 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-07 16:10:30.987 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 16:10:30.995 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 16:10:31.045 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 16:10:31.051 +01:00 [INF] Hosting environment: Development
+2024-11-07 16:10:31.062 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 16:10:31.967 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - null null
+2024-11-07 16:10:31.967 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - null null
+2024-11-07 16:10:31.967 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - null null
+2024-11-07 16:10:32.004 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - 307 0 null 41.2076ms
+2024-11-07 16:10:32.005 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - 307 0 null 41.8395ms
+2024-11-07 16:10:32.005 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - 307 0 null 43.424ms
+2024-11-07 16:10:32.460 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - null null
+2024-11-07 16:10:32.460 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/pizza.jpg - null null
+2024-11-07 16:10:32.460 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/tacos.jpg - null null
+2024-11-07 16:10:32.555 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/tacos.jpg - 404 0 null 95.6549ms
+2024-11-07 16:10:32.558 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/pizza.jpg - 404 0 null 97.9529ms
+2024-11-07 16:10:32.558 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - 404 0 null 98.1257ms
+2024-11-07 16:10:32.558 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/tacos.jpg, Response status code: 404
+2024-11-07 16:10:32.558 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/pizza.jpg, Response status code: 404
+2024-11-07 16:10:32.559 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/fishandchips.jpg, Response status code: 404
+2024-11-07 16:10:39.266 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:10:39.267 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 1.12ms
+2024-11-07 16:10:39.273 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:10:39.274 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.6404ms
+2024-11-07 16:12:16.152 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:12:16.152 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.5557ms
+2024-11-07 16:12:22.229 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:12:22.230 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.4941ms
+2024-11-07 16:15:03.156 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:15:03.163 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 6.2915ms
+2024-11-07 16:15:06.040 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:15:06.042 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 1.1668ms
+2024-11-07 16:15:06.044 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:15:06.046 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.5322ms
+2024-11-07 16:15:15.255 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:15:15.256 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.7056ms
+2024-11-07 16:15:18.046 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:15:18.051 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.7284ms
+2024-11-07 16:15:18.062 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:15:18.062 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.4474ms
+2024-11-07 16:15:38.328 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:15:38.329 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.5089ms
+2024-11-07 16:15:41.643 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:15:41.644 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.6184ms
+2024-11-07 16:15:41.646 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 16:15:41.646 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 0.3973ms

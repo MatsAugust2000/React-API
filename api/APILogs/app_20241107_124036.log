@@ -1,0 +1,16 @@
+2024-11-07 12:40:36.815 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-07 12:40:37.068 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 12:40:37.071 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 12:40:37.080 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 12:40:37.083 +01:00 [INF] Hosting environment: Development
+2024-11-07 12:40:37.086 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 12:40:51.772 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/swagger/index.html - null null
+2024-11-07 12:40:51.820 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/swagger/index.html - 307 0 null 52.9983ms
+2024-11-07 12:40:51.927 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/index.html - null null
+2024-11-07 12:40:51.965 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/index.html - 404 0 null 38.1829ms
+2024-11-07 12:40:51.972 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/swagger/index.html, Response status code: 404
+2024-11-07 12:41:06.051 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/ - null null
+2024-11-07 12:41:06.053 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/ - 307 0 null 1.9256ms
+2024-11-07 12:41:06.067 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/ - null null
+2024-11-07 12:41:06.068 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/ - 404 0 null 1.2067ms
+2024-11-07 12:41:06.069 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/, Response status code: 404

@@ -1,0 +1,54 @@
+2024-11-07 17:58:40.846 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 17:58:40.860 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 17:58:40.871 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 17:58:40.875 +01:00 [INF] Hosting environment: Development
+2024-11-07 17:58:40.877 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 17:58:56.067 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - null null
+2024-11-07 17:58:56.067 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - null null
+2024-11-07 17:58:56.067 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - null null
+2024-11-07 17:58:56.143 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/fishandchips.jpg - 307 0 null 67.7506ms
+2024-11-07 17:58:56.143 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/tacos.jpg - 307 0 null 73.6741ms
+2024-11-07 17:58:56.149 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/images/pizza.jpg - 307 0 null 67.773ms
+2024-11-07 17:58:56.427 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/tacos.jpg - null null
+2024-11-07 17:58:56.427 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - null null
+2024-11-07 17:58:56.427 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/pizza.jpg - null null
+2024-11-07 17:58:56.482 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - 404 0 null 54.7249ms
+2024-11-07 17:58:56.482 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/pizza.jpg - 404 0 null 54.7261ms
+2024-11-07 17:58:56.482 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/tacos.jpg - 404 0 null 54.5745ms
+2024-11-07 17:58:56.485 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/pizza.jpg, Response status code: 404
+2024-11-07 17:58:56.485 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/fishandchips.jpg, Response status code: 404
+2024-11-07 17:58:56.485 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/images/tacos.jpg, Response status code: 404
+2024-11-07 17:59:17.917 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 17:59:17.925 +01:00 [INF] CORS policy execution successful.
+2024-11-07 17:59:17.928 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 11.3068ms
+2024-11-07 17:59:17.930 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 17:59:17.931 +01:00 [INF] CORS policy execution successful.
+2024-11-07 17:59:17.932 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 1.2122ms
+2024-11-07 17:59:18.224 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-07 17:59:18.225 +01:00 [INF] CORS policy execution failed.
+2024-11-07 17:59:18.228 +01:00 [INF] Request origin null does not have permission to access the resource.
+2024-11-07 17:59:18.327 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-07 17:59:18.332 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 500 null text/plain; charset=utf-8 107.3756ms
+2024-11-07 17:59:18.336 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-07 17:59:18.337 +01:00 [INF] CORS policy execution failed.
+2024-11-07 17:59:18.337 +01:00 [INF] Request origin null does not have permission to access the resource.
+2024-11-07 17:59:18.346 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Endpoint FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) contains CORS metadata, but a middleware was not found that supports CORS.
+Configure your application startup by adding app.UseCors() in the application startup code. If there are calls to app.UseRouting() and app.UseEndpoints(...), the call to app.UseCors() must go between them.
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.ThrowMissingCorsMiddlewareException(Endpoint endpoint)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-07 17:59:18.348 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 500 null text/plain; charset=utf-8 13.7214ms

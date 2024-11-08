@@ -1,0 +1,42 @@
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .table {
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 768px) {
+    .table {
+      font-size: 0.875rem;
+    }
+    
+    .btn-sm {
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+    }
+  }
+  
+  .table td, .table th {
+    vertical-align: middle;
+  }
+  
+  .img-fluid {
+    transition: transform 0.2s;
+  }
+  
+  .img-fluid:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Optional: Add zebra striping with a more subtle color */
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+  
+  /* Optional: Add hover effect on rows */
+  .table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+  }

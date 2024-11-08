@@ -1,0 +1,11 @@
+2024-11-07 18:02:41.240 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-07 18:02:41.255 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-07 18:02:41.268 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-07 18:02:41.274 +01:00 [INF] Hosting environment: Development
+2024-11-07 18:02:41.278 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-07 18:02:41.417 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 18:02:41.466 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 51.8962ms
+2024-11-07 18:02:41.476 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 18:02:41.487 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 9.9123ms
+2024-11-07 18:02:46.786 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-07 18:02:46.790 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 307 0 null 4.3846ms
