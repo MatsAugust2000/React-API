@@ -1,0 +1,35 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+  }
+  
+  .footer a {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .footer a:hover {
+    color: #000000;
+  }
+  
+  .footer h5 {
+    color: #343a40;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 768px) {
+    .footer .text-md-start,
+    .footer .text-md-end {
+      text-align: center !important;
+    }
+  }

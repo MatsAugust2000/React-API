@@ -1,10 +1,5 @@
 import API_URL from '../apiConfig'; // Update the path if necessary
 
-const headers = {
-  'Content-Type': 'application/json',
-  
-};
-
 const handleResponse = async (response: Response) => {
   if (response.ok) {  // HTTP status code success 200-299
     if (response.status === 204) { // Detele returns 204 No content
@@ -31,16 +26,32 @@ export const fetchProductById = async (productId: string) => {
 export const createProduct = async (product: any) => {
   const response = await fetch(`${API_URL}/api/productapi/create`, {
     method: 'POST',
-    headers,
+    headers:{
+      'Content-Type': 'application/json'
+    },
+    credentials: 'include',
     body: JSON.stringify(product),
   });
+
+  if (response.status === 401) {
+    const error = new Error('Unauthorized') as any;
+    error.status = 401;
+    throw error;
+  }
+
+  if (!response.ok) {
+    throw new Error('Network response was not ok');
+  }
   return handleResponse(response);
 };
 // Put update item
 export const updateProduct = async (productId: number, product: any) => {
   const response = await fetch(`${API_URL}/api/productapi/update/${productId}`, {
     method: 'PUT',
-    headers,
+    headers:{
+      'Content-Type': 'application/json'
+    },
+    credentials: 'include',    
     body: JSON.stringify(product),
   });
   return handleResponse(response);
@@ -49,6 +60,20 @@ export const updateProduct = async (productId: number, product: any) => {
 export const deleteProduct = async (productId: number) => {
   const response = await fetch(`${API_URL}/api/productapi/delete/${productId}`, {
     method: 'DELETE',
+    headers:{
+      'Content-Type': 'application/json'
+    },
+    credentials: 'include',
   });
+
+  if (response.status === 401) {
+    const error = new Error('Unauthorized') as any;
+    error.status = 401;
+    throw error;
+  }
+
+  if (!response.ok) {
+    throw new Error('Network response was not ok');
+  }
   return handleResponse(response);
 };

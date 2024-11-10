@@ -5,6 +5,7 @@ import ProductGrid from './ProductGrid';
 import { Product } from '../types/product';
 import API_URL from '../apiConfig';
 import * as ProductService from './ProductService';
+import ErrorPopup from '../shared/ErrorPopup';
 
 // const API_URL = 'http://localhost:5199'
 
@@ -14,6 +15,7 @@ const ProductListPage: React.FC = () => {
   const [error, setError] = useState<string | null>(null); // State for storing error messages
   const [showTable, setShowTable] = useState<boolean>(true); // State to toggle between table and grid view
   const [searchQuery, setSearchQuery] = useState<string>(''); // State for search query
+  const [showUnauthorizedError, setShowUnauthorizedError] = useState(false);
 
   const toggleTableOrGrid = () => setShowTable(prevShowTable => !prevShowTable);
 
@@ -64,6 +66,7 @@ const ProductListPage: React.FC = () => {
         setProducts(prevProducts => prevProducts.filter(product => product.productId !== productId));
         console.log('Product deleted:', productId);
       } catch (error) {
+        setShowUnauthorizedError(true);
         console.error('Error deleting product:', error);
         setError('Failed to delete product.');
       }
@@ -91,7 +94,13 @@ const ProductListPage: React.FC = () => {
       {showTable
         ? <ProductTable products={filteredProducts} apiUrl={API_URL} onProductDeleted={handleProductDeleted} />
         : <ProductGrid products={filteredProducts} apiUrl={API_URL} onProductDeleted={handleProductDeleted} />}
-      <Button href='/productcreate' className="btn btn-secondary mt-3">Add New Product</Button>
+      <Button href='/productcreate' className="btn btn-secondary mt-3">
+          Add New Product
+      </Button>
+      {showUnauthorizedError && (
+        <ErrorPopup onClose={() => setShowUnauthorizedError(false)} />
+      )}
+
     </div>
   );
 };

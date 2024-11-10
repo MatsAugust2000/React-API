@@ -23,7 +23,7 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products, apiUrl, onProductDe
             <Card>
               <Card.Img variant="top" src={`${apiUrl}${product.imageUrl}`} alt={product.name} />
               <Card.Body>
-                <Card.Title>{product.productId} {product.name}</Card.Title>
+                <Card.Title>{product.name}</Card.Title>
                 <Card.Text>
                   {product.description}
                 </Card.Text>

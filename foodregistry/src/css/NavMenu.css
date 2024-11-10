@@ -1,0 +1,36 @@
+.navbar-custom {
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  }
+  
+  .navbar-custom .navbar-brand {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .navbar-custom .nav-link {
+    color: #666;
+    padding: 0.5rem 1rem;
+    transition: color 0.5s ease;
+  }
+  
+  .navbar-custom .nav-link:hover {
+    color: #000000;
+  }
+  
+  /* Active link styling */
+  .navbar-custom .nav-link.active {
+    color: #007bff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 991.98px) {
+    .navbar-custom .navbar-collapse {
+      padding: 1rem 0;
+    }
+    
+    .navbar-custom .nav-link {
+      padding: 0.5rem 0;
+    }
+  }
+
+  

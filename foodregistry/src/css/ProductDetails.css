@@ -1,0 +1,116 @@
+.product-details .container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .product-details .my-5 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .product-details .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .product-details .gx-5 {
+    --bs-gutter-x: 3rem;
+  }
+  
+  .product-details .col-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .product-details .col-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .product-details .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-details .btn {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .product-details .btn-secondary {
+    color: #fff;
+    background-color: #00559f;
+    border-color: #00437d;
+  }
+    
+  
+  .product-details .btn-secondary:hover {
+    background-color: #00365f;
+    border-color: #00070d;
+  }
+    
+  
+  .product-details .nutrition-score {
+    /*border-radius: 0.25rem;*/
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: white;
+    text-transform: uppercase;
+   }
+  
+   .product-details .nutrition-score {
+    /* ... existing styles ... */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  
+  .product-details .nutrition-score:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  /* Optional: Add a container for better positioning */
+  .product-details .nutrition-score-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .product-details .nutrition-score[data-score="A"] { background-color: #038141; color: white; }
+  .product-details .nutrition-score[data-score="B"] { background-color: #85BB2F; color: white; }
+  .product-details .nutrition-score[data-score="C"] { background-color: #FEC52E; color: white}
+  .product-details .nutrition-score[data-score="D"] { background-color: #EE8100; color: white; }
+  .product-details .nutrition-score[data-score="E"] { background-color: #E63E11; color: white; }
+  
+  
+  .product-details hr {
+    margin: 1rem 0;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-details .mb-2 {
+    margin-bottom: 1rem;
+  }
+  
+  .product-details .text-nowrap {
+    white-space: nowrap;
+  }
