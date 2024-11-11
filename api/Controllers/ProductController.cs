@@ -161,7 +161,7 @@ public class ProductAPIController : Controller
 
     public class NutritionCalculationRequest
     {
-        public string Category { get; set; }
+        public string Category { get; set; } = string.Empty;
         public double Calories { get; set; }
         public double SaturatedFat { get; set; }
         public double Sugar { get; set; }

@@ -1,0 +1,197 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.caption-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .carousel-image-container {
+      height: 400px; /* Smaller height for mobile */
+    }
+
+    .caption-bg {
+      padding: 10px;
+    }
+
+    .caption-bg h5 {
+      font-size: 1.1rem;
+    }
+
+    .caption-bg p {
+      font-size: 0.9rem;
+    }
+
+    .carousel-caption {
+      padding: 10px;
+    }
+    
+    .carousel-caption h5 {
+      font-size: 1.1rem;
+    }
+    
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+      }
+      
+    .feature-card {
+        padding: 1rem;
+    }
+}
+
+.carousel-caption{
+    transition: 0.5s;
+}
+/* Optional: Add some hover effects */
+.carousel-caption:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+/* Optional: Style the carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+
+.carousel-indicators {
+  bottom: 20px;
+}
+
+/* Carousel styling */
+.carousel-wrapper {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 2rem;
+}
+
+.full-width-carousel {
+  width: 100%;
+}
+
+.carousel-image-container {
+  width: 100%;
+  height: 600px; /* Adjust this value to your needs */
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit:cover; /* This ensures the image covers the area without distortion */
+}
+
+/* Section styles */
+.section {
+  padding: 50px 60px;
+  border-radius: 8px;
+}
+
+.section-light {
+  background-color: #f8f9fa;
+}
+
+.section-dark {
+  /*background-color: #343a40;*/
+  background-color: #f8f9fa;
+
+  color: white;
+}
+
+.section-color {
+  background-color: #6D2CF2;
+  color: white;
+}
+
+/* Feature card styles */
+.feature-card {
+  padding: 2rem 2rem 2rem 2rem;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.feature-card:hover{
+    box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    transform: scale(1.1);
+}
+
+.feature-card1:hover {
+  transform: translateY(-5px) translate(-5px);
+}
+.feature-card2:hover {
+    transform: translateY(-10px);
+}
+.feature-card3:hover {
+    transform: translateY(-5px) translate(5px);
+}
+
+.section-dark .feature-card {
+    color: #6D2CF2;
+    /*background-color: #212529;*/
+    background-color: #343a40;
+    border-radius: 8px;
+    margin: 0px;
+  }
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+  
+
+/* Button styles */
+.btn-outline-light {
+  border: 2px solid white;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: #000000;
+  transform:scale(1.1);
+}
+
+.display-4{
+    margin-top: -50px;
+    margin-bottom: 40px;
+    font-weight:400;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    /*font-family: 'FontAwesome', 'Second Font name';*/
+}
+
+.iconLink{
+    text-decoration: none;
+    color: #6D2CF2;
+    transition: 0.5s ease;
+
+}
+
+.iconLink:hover{
+    color: #f8f9fa;
+    transition: 0.5s ease;
+}
+
+hr{
+    margin: 0;
+    padding: 2px;
+    visibility: hidden;
+}

@@ -134,7 +134,7 @@ public class AuthController : Controller
 
     [Authorize(AuthenticationSchemes = "Identity.Application")]
     [HttpPost("logout")]
-    public async Task<IActionResult> Logout([FromQuery] string returnUrl = null)
+    public async Task<IActionResult> Logout([FromQuery] string returnUrl)// = null) 
     {
         try
         {

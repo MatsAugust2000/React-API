@@ -8,7 +8,7 @@ const NavMenu: React.FC = () => {
   return (
     <Navbar bg="light" expand="lg" className='navbar-custom mb3'>
       <Container>
-        <Navbar.Brand as={Link} to="/">Food Registry</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className='brand'>Food Registry</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

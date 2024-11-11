@@ -59,10 +59,10 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.Cookie.Name = ".AspNetCore.Identity.Application";
     options.Cookie.SameSite = SameSiteMode.Lax;
     options.Cookie.SecurePolicy = CookieSecurePolicy.None; // Set to None for development
-     
+    
     var returnUrlProvider = builder.Services.BuildServiceProvider()
         .GetRequiredService<IReturnUrlProvider>();
-
+    
     // If using React on a different port in development:
     options.Events = new CookieAuthenticationEvents
     {
@@ -122,6 +122,7 @@ builder.Services.AddSingleton<IReturnUrlProvider>(sp =>
         builder.Environment.IsDevelopment()
     )
 );
+
 
 builder.Services.AddAuthorization();
 

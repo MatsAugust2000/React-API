@@ -9,11 +9,12 @@
   .footer a {
     color: #6c757d;
     text-decoration: none;
-    transition: color 0.2s ease;
+    transition: all 0.1s ease;
   }
   
   .footer a:hover {
     color: #000000;
+    transform: scale(1.05);
   }
   
   .footer h5 {

@@ -26,7 +26,7 @@ private readonly SignInManager<IdentityUser> _signInManager;
     }
 
     [HttpPost]
-    public async Task<IActionResult> Register(string email, string password, string returnUrl = null)
+    public async Task<IActionResult> Register(string email, string password, string returnUrl)// = null)
     {
         try
         {
@@ -72,7 +72,7 @@ private readonly SignInManager<IdentityUser> _signInManager;
     }
 
 [HttpPost]
-    public async Task<IActionResult> Logout(string returnUrl = null)
+    public async Task<IActionResult> Logout(string returnUrl)//= null)
     {
         _logger.LogInformation("Attempting to log out.");
 

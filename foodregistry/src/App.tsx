@@ -17,7 +17,6 @@ const App: React.FC = () => {
       <Router>
           <div className='app-container'>
           <NavMenu />
-
             <div className='content-wrap'>
               <main className='main-content'>
                 <Container>

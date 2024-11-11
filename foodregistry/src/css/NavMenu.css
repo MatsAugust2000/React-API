@@ -10,11 +10,13 @@
   .navbar-custom .nav-link {
     color: #666;
     padding: 0.5rem 1rem;
-    transition: color 0.5s ease;
+    transition: all 0.5s ease;
   }
   
   .navbar-custom .nav-link:hover {
     color: #000000;
+    transform: scale(1.05);
+
   }
   
   /* Active link styling */
@@ -31,6 +33,17 @@
     .navbar-custom .nav-link {
       padding: 0.5rem 0;
     }
+
+    .navbar-custom .nav-link:hover {
+      transition: 0.2s ease;
+      transform: scale(1.02);
+    }
   }
 
+.brand{
+  transition: 0.1s ease;
+}
+.brand:hover{
+  transform: scale(1.05);
   
+}
