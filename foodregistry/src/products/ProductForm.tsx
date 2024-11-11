@@ -247,9 +247,9 @@ const ProductForm: React.FC<ProductFormProps> = ({
           onChange={(e) => setImageUrl(e.target.value)}
         />
       </Form.Group>
-
-      <Button variant="primary" type="submit">{isUpdate ? 'Update Product' : 'Create Product'}</Button>
-      <Button variant="secondary" onClick={onCancel} className="ms-2">Cancel</Button>
+          <br></br>
+      <Button variant="secondary" type="submit">{isUpdate ? 'Update Product' : 'Create Product'}</Button>
+      <Button variant="primary" onClick={onCancel} className="ms-2">Cancel</Button>
     </Form>
   );
 };

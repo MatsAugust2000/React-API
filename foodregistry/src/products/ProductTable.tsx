@@ -72,7 +72,14 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, apiUrl, onProduct
                 {products.map(product => (
                   <tr key={product.productId}>
                     <td className="align-middle">{product.productId}</td>
-                    <td className="align-middle fw-bold">{product.name}</td>
+                    <td className="align-middle fw-bold">
+                      <Link 
+                        to={`/productdetails/${product.productId}`}
+                        className='text-decoration-none'
+                      >
+                        {product.name}
+                      </Link>
+                    </td>
                     <td className="align-middle">{product.category}</td>
                     <td className="align-middle small">{product.nutrition}</td>
                     <td className="align-middle text-center">

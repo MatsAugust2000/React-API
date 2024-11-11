@@ -40,3 +40,15 @@
   .table-hover tbody tr:hover {
     background-color: rgba(0, 0, 0, 0.04);
   }
+
+  .btn-secondary{
+    color: #fff;
+    background-color: #00559f;
+    border-color: #00437d;
+  }
+
+  .btn-secondary:hover{
+    background-color: #00365f;
+    border-color: #00070d;
+  }
+

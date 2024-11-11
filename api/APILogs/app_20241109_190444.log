@@ -1,0 +1,56 @@
+2024-11-09 19:04:47.014 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-09 19:04:47.546 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-09 19:04:47.552 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-09 19:04:47.563 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-09 19:04:47.568 +01:00 [INF] Hosting environment: Development
+2024-11-09 19:04:47.571 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-09 19:04:59.093 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/Register - null null
+2024-11-09 19:04:59.270 +01:00 [INF] Executing endpoint '/Account/Register'
+2024-11-09 19:04:59.363 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2024-11-09 19:04:59.421 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.RegisterModel.OnGetAsync - ModelState is "Valid"
+2024-11-09 19:04:59.434 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-09 19:04:59.442 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-09 19:04:59.443 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-09 19:04:59.786 +01:00 [INF] Executed page /Account/Register in 418.1937ms
+2024-11-09 19:04:59.789 +01:00 [INF] Executed endpoint '/Account/Register'
+2024-11-09 19:04:59.813 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/Register - 200 null text/html; charset=utf-8 722.5515ms
+2024-11-09 19:05:22.463 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/Identity/Account/Register - application/x-www-form-urlencoded 274
+2024-11-09 19:05:22.485 +01:00 [INF] CORS policy execution failed.
+2024-11-09 19:05:22.486 +01:00 [INF] Request origin http://localhost:5194 does not have permission to access the resource.
+2024-11-09 19:05:22.490 +01:00 [INF] Executing endpoint '/Account/Register'
+2024-11-09 19:05:22.491 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2024-11-09 19:05:22.589 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.RegisterModel.OnPostAsync - ModelState is "Valid"
+2024-11-09 19:05:23.610 +01:00 [INF] User created a new account with password.
+2024-11-09 19:05:23.758 +01:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2024-11-09 19:05:23.760 +01:00 [INF] Executed handler method OnPostAsync, returned result Microsoft.AspNetCore.Mvc.LocalRedirectResult.
+2024-11-09 19:05:23.762 +01:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2024-11-09 19:05:23.763 +01:00 [INF] Executed page /Account/Register in 1272.0294ms
+2024-11-09 19:05:23.764 +01:00 [INF] Executed endpoint '/Account/Register'
+2024-11-09 19:05:23.772 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/Identity/Account/Register - 302 0 null 1310.0205ms
+2024-11-09 19:05:23.774 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/ - null null
+2024-11-09 19:05:23.783 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/ - 404 0 null 9.2437ms
+2024-11-09 19:05:23.785 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5194/, Response status code: 404
+2024-11-09 19:05:23.887 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/lib/bootstrap/dist/css/bootstrap.css.map - null null
+2024-11-09 19:05:24.029 +01:00 [INF] Sending file. Request path: '/Identity/lib/bootstrap/dist/css/bootstrap.css.map'. Physical path: 'C:\Users\Mats\.nuget\packages\microsoft.aspnetcore.identity.ui\8.0.10\staticwebassets\V5\lib\bootstrap\dist\css\bootstrap.css.map'
+2024-11-09 19:05:24.031 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/lib/bootstrap/dist/css/bootstrap.css.map - 200 536547 text/plain 144.2241ms
+2024-11-09 19:05:50.024 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/Register - null null
+2024-11-09 19:05:50.032 +01:00 [INF] Executing endpoint '/Account/Register'
+2024-11-09 19:05:50.032 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2024-11-09 19:05:50.034 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.RegisterModel.OnGetAsync - ModelState is "Valid"
+2024-11-09 19:05:50.035 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-09 19:05:50.035 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-09 19:05:50.035 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-09 19:05:50.067 +01:00 [INF] Executed page /Account/Register in 34.1037ms
+2024-11-09 19:05:50.067 +01:00 [INF] Executed endpoint '/Account/Register'
+2024-11-09 19:05:50.067 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/Register - 200 null text/html; charset=utf-8 43.8504ms
+2024-11-09 19:06:05.140 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/Login - null null
+2024-11-09 19:06:05.142 +01:00 [INF] Executing endpoint '/Account/Login'
+2024-11-09 19:06:05.160 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-11-09 19:06:05.167 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-11-09 19:06:05.178 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-11-09 19:06:05.178 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-09 19:06:05.179 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-09 19:06:05.179 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-09 19:06:05.249 +01:00 [INF] Executed page /Account/Login in 88.9756ms
+2024-11-09 19:06:05.250 +01:00 [INF] Executed endpoint '/Account/Login'
+2024-11-09 19:06:05.250 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/Login - 200 null text/html; charset=utf-8 109.7759ms

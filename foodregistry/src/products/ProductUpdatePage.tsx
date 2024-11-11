@@ -4,6 +4,7 @@ import ProductForm from './ProductForm';
 import { Product } from '../types/product';
 import API_URL from '../apiConfig';
 import * as ProductService from './ProductService';
+import ErrorPopup from '../shared/ErrorPopup';
 
 const ProductUpdatePage: React.FC = () => {
   const { productId } = useParams<{ productId: string }>(); // Get productId from the URL
@@ -11,6 +12,7 @@ const ProductUpdatePage: React.FC = () => {
   const [product, setProduct] = useState<Product | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [showUnauthorizedError, setShowUnauthorizedError] = useState(false);
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -35,6 +37,7 @@ const ProductUpdatePage: React.FC = () => {
       console.log('Product updated successfully:', data);
       navigate('/products'); // Navigate back after successful creation
     } catch (error) {
+      setShowUnauthorizedError(true);
       console.error('There was a problem with the fetch operation:', error);
     }
   }
@@ -47,6 +50,10 @@ const ProductUpdatePage: React.FC = () => {
     <div>
       <h2>Update Product</h2>
       <ProductForm onProductChanged={handleProductUpdated} productId={product.productId} isUpdate={true} initialData={product} />
+    
+      {showUnauthorizedError && (
+        <ErrorPopup onClose={() => setShowUnauthorizedError(false)} />
+      )}
     </div>
   );
 };

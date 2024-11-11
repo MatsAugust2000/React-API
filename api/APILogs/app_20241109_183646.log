@@ -1,0 +1,92 @@
+2024-11-09 18:36:50.005 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-09 18:36:51.194 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-09 18:36:51.296 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-09 18:36:51.393 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-09 18:36:51.418 +01:00 [INF] Hosting environment: Development
+2024-11-09 18:36:51.434 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-09 18:39:02.769 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/index.html - null null
+2024-11-09 18:39:03.074 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/index.html - 200 null text/html;charset=utf-8 312.8851ms
+2024-11-09 18:39:03.254 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - null null
+2024-11-09 18:39:03.656 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 401.5331ms
+2024-11-09 18:39:07.734 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/Auth/test - null null
+2024-11-09 18:39:07.843 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.Test (api)'
+2024-11-09 18:39:07.893 +01:00 [INF] Route matched with {action = "Test", controller = "Auth", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Test() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-09 18:39:07.907 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType11`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-09 18:39:07.947 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.Test (api) in 36.1732ms
+2024-11-09 18:39:07.947 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.Test (api)'
+2024-11-09 18:39:07.951 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/Auth/test - 200 null application/json; charset=utf-8 216.4995ms
+2024-11-09 18:39:31.492 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/Auth/userinfo - null null
+2024-11-09 18:39:31.507 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-09 18:39:31.510 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-09 18:39:31.516 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`4[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-09 18:39:31.526 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 15.6103ms
+2024-11-09 18:39:31.527 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-09 18:39:31.530 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/Auth/userinfo - 200 null application/json; charset=utf-8 39.9423ms
+2024-11-09 18:39:45.850 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/Auth/userinfo - null null
+2024-11-09 18:39:45.853 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-09 18:39:45.854 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-09 18:39:45.870 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`4[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-09 18:39:45.871 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 15.3492ms
+2024-11-09 18:39:45.871 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-09 18:39:45.871 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/Auth/userinfo - 200 null application/json; charset=utf-8 21.4169ms
+2024-11-09 18:39:53.839 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/Auth/test - null null
+2024-11-09 18:39:53.840 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.Test (api)'
+2024-11-09 18:39:53.840 +01:00 [INF] Route matched with {action = "Test", controller = "Auth", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Test() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-09 18:39:53.840 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType11`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-09 18:39:53.841 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.Test (api) in 0.7302ms
+2024-11-09 18:39:53.841 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.Test (api)'
+2024-11-09 18:39:53.842 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/Auth/test - 200 null application/json; charset=utf-8 3.5419ms
+2024-11-09 18:40:05.929 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/ - null null
+2024-11-09 18:40:05.932 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/ - 404 0 null 2.8061ms
+2024-11-09 18:40:05.934 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7263/, Response status code: 404
+2024-11-09 18:46:17.703 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/pizza.jpg - null null
+2024-11-09 18:46:17.705 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - null null
+2024-11-09 18:46:17.705 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/images/tacos.jpg - null null
+2024-11-09 18:46:17.880 +01:00 [INF] Sending file. Request path: '/images/pizza.jpg'. Physical path: 'C:\Users\Mats\web-projects\react\exam\api\wwwroot\images\pizza.jpg'
+2024-11-09 18:46:17.880 +01:00 [INF] Sending file. Request path: '/images/tacos.jpg'. Physical path: 'C:\Users\Mats\web-projects\react\exam\api\wwwroot\images\tacos.jpg'
+2024-11-09 18:46:17.880 +01:00 [INF] Sending file. Request path: '/images/fishandchips.jpg'. Physical path: 'C:\Users\Mats\web-projects\react\exam\api\wwwroot\images\fishandchips.jpg'
+2024-11-09 18:46:17.880 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/pizza.jpg - 200 127421 image/jpeg 177.0673ms
+2024-11-09 18:46:17.880 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/tacos.jpg - 200 118763 image/jpeg 177.1683ms
+2024-11-09 18:46:17.880 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/images/fishandchips.jpg - 200 100023 image/jpeg 175.6341ms
+2024-11-09 18:46:50.008 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-09 18:46:50.084 +01:00 [INF] CORS policy execution failed.
+2024-11-09 18:46:50.084 +01:00 [INF] Request origin http://localhost:4000 does not have permission to access the resource.
+2024-11-09 18:46:50.086 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-09 18:46:50.106 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-09 18:46:50.381 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 18:46:50.434 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 327.0602ms
+2024-11-09 18:46:50.434 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-09 18:46:50.451 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7263/api/productapi/productlist - null null
+2024-11-09 18:46:50.454 +01:00 [INF] CORS policy execution failed.
+2024-11-09 18:46:50.454 +01:00 [INF] Request origin http://localhost:4000 does not have permission to access the resource.
+2024-11-09 18:46:50.454 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-09 18:46:50.454 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-09 18:46:50.456 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 200 null application/json; charset=utf-8 448.0093ms
+2024-11-09 18:46:50.605 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 18:46:50.605 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 150.6539ms
+2024-11-09 18:46:50.605 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-09 18:46:50.606 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7263/api/productapi/productlist - 200 null application/json; charset=utf-8 154.8836ms
+2024-11-09 18:48:01.311 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-09 18:48:01.311 +01:00 [INF] CORS policy execution successful.
+2024-11-09 18:48:01.312 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-09 18:48:01.312 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-09 18:48:01.499 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 18:48:01.649 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 336.6137ms
+2024-11-09 18:48:01.649 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-09 18:48:01.650 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 200 null application/json; charset=utf-8 339.1179ms
+2024-11-09 18:48:01.669 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-09 18:48:01.669 +01:00 [INF] CORS policy execution successful.
+2024-11-09 18:48:01.670 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-09 18:48:01.670 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-09 18:48:01.704 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-09 18:48:01.705 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 34.5089ms
+2024-11-09 18:48:01.705 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-09 18:48:01.705 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 200 null application/json; charset=utf-8 36.3664ms
+2024-11-09 18:53:42.045 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - null null
+2024-11-09 18:53:42.045 +01:00 [INF] CORS policy execution successful.
+2024-11-09 18:53:42.046 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-09 18:53:42.046 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-09 18:53:42.048 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`4[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-09 18:53:42.048 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 2.1655ms
+2024-11-09 18:53:42.048 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-09 18:53:42.049 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - 200 null application/json; charset=utf-8 3.9259ms

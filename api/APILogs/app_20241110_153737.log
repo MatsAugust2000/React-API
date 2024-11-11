@@ -1,0 +1,150 @@
+2024-11-10 15:37:40.880 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-10 15:37:41.548 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-10 15:37:41.559 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-10 15:37:41.586 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-10 15:37:41.591 +01:00 [INF] Hosting environment: Development
+2024-11-10 15:37:41.595 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-10 15:37:41.784 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - null null
+2024-11-10 15:37:41.881 +01:00 [INF] CORS policy execution successful.
+2024-11-10 15:37:41.898 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-10 15:37:41.923 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-10 15:37:41.969 +01:00 [INF] Authentication result: True
+2024-11-10 15:37:41.973 +01:00 [INF] Principal Name from auth result: mattt@mail.no
+2024-11-10 15:37:41.977 +01:00 [INF] Request path: /api/Auth/userinfo
+2024-11-10 15:37:41.979 +01:00 [INF] Request method: GET
+2024-11-10 15:37:41.983 +01:00 [INF] Request scheme: http
+2024-11-10 15:37:41.986 +01:00 [INF] Auth Type: Identity.Application
+2024-11-10 15:37:41.990 +01:00 [INF] Identity Name: mattt@mail.no
+2024-11-10 15:37:42.171 +01:00 [INF] User from UserManager: null
+2024-11-10 15:37:42.177 +01:00 [INF] Cookies received: .AspNetCore.Antiforgery.lR7t4MXUUZs=CfDJ8FYKQg2-tzVDp03-Gqv4Alp0e2kDKTpS7ycju9zsrFEctUbGhXGgm-TR2OGRtNiDSW2-yLD_U9ztu3gK8l94pzxhlcgICY-WqKInqucCSG5DxX1CJdczsvzTSLcIdT395LhAveMj_2LRO4FR08fdmRA, .AspNetCore.Identity.Application=CfDJ8FYKQg2-tzVDp03-Gqv4AlpjfBQzdO1GrHCY80sEWkUusv544Fo_-918F0L1yKReZyaFj47xLl8Z9y8tPeKpVNm14yMhg05k4r03nyubAGnnoNCjrX5pKdM9mogcWczdFIyhy2x7LwzXUudTUGitQsJpHbXb0keUGtgr3N9bRY7sIngZnb50KpmINlZjnk16OytZcRu3lD1TqX7Inm3QcgoIjufw7lHRLVO5-Phge54I-bZJ3sa2lpnzBjdIe3IINOhH450bOjM43qMiPT2rSZrXFCBsJLwTigA1xSBlQizIdGEjJDw1aAI709LxogIgGWAbO6ruF9PTNEQwbFZ16K5DoT0e6EY-JpbtrKJZizfBP1kom2km_XFxAA5SuVZyVkL4wqxlW_MELWoClSFOMK6_fCMqk8WxKLYMCK2XJl9u8pIuCCFH8Ddw_M_-CYyTM2i6wMvNhT9LjpAAwX0oV4CFP8coJLKn0uQqGeFPeCqO2EFhG4JJI93_0dCK_OWhv3lIRjUnwCRrudOT-DTV9IzRz3ZSzEeVvFHzQPkoVCEQtMIKHphlkcUNnGQXP7RXCvgRdlxpHIhQsyUsPD1Ij7aBxAicViHjhWxYkE-tSWcw5Zqx_0suXx1sgEUqGSKfOQxZvZWSS8hsLD54Fsa7wTiOdljv7KuNQb7LOD8CRJlUCF7vEbXWo8oWZFa0EXOVkZha2U-lSyx0gtHj-V-uXpWNnv8z3nNPQ01LXaTZw2fM
+2024-11-10 15:37:42.182 +01:00 [INF] GetUserInfo called:
+2024-11-10 15:37:42.186 +01:00 [INF] IsAuthenticated: True
+2024-11-10 15:37:42.190 +01:00 [INF] UserName: mattt@mail.no
+2024-11-10 15:37:42.196 +01:00 [INF] Claims: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier: a5d92c7b-854e-4218-9d1b-1174cb1b5101, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: mattt@mail.no, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress: mattt@mail.no, AspNet.Identity.SecurityStamp: TPLXA72B2YUAUIXCYAO3TS56LPSOSXUU, amr: pwd
+2024-11-10 15:37:42.201 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier = a5d92c7b-854e-4218-9d1b-1174cb1b5101
+2024-11-10 15:37:42.205 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name = mattt@mail.no
+2024-11-10 15:37:42.210 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress = mattt@mail.no
+2024-11-10 15:37:42.215 +01:00 [INF] Claim: AspNet.Identity.SecurityStamp = TPLXA72B2YUAUIXCYAO3TS56LPSOSXUU
+2024-11-10 15:37:42.220 +01:00 [INF] Claim: amr = pwd
+2024-11-10 15:37:42.247 +01:00 [INF] Returning response: {"isAuthenticated":true,"userName":"mattt@mail.no","manageUrl":"/Identity/Account/Manage","logoutUrl":"/Identity/Account/Logout","loginUrl":"/Identity/Account/Login","registerUrl":"/Identity/Account/Register"}
+2024-11-10 15:37:42.259 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-10 15:37:42.275 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - null null
+2024-11-10 15:37:42.277 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 346.3595ms
+2024-11-10 15:37:42.279 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-10 15:37:42.280 +01:00 [INF] CORS policy execution successful.
+2024-11-10 15:37:42.282 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-10 15:37:42.282 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-10 15:37:42.295 +01:00 [INF] Authentication result: True
+2024-11-10 15:37:42.298 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - 200 null application/json; charset=utf-8 509.6216ms
+2024-11-10 15:37:42.299 +01:00 [INF] Principal Name from auth result: mattt@mail.no
+2024-11-10 15:37:42.305 +01:00 [INF] Request path: /api/Auth/userinfo
+2024-11-10 15:37:42.311 +01:00 [INF] Request method: GET
+2024-11-10 15:37:42.315 +01:00 [INF] Request scheme: http
+2024-11-10 15:37:42.320 +01:00 [INF] Auth Type: Identity.Application
+2024-11-10 15:37:42.324 +01:00 [INF] Identity Name: mattt@mail.no
+2024-11-10 15:37:42.416 +01:00 [INF] User from UserManager: null
+2024-11-10 15:37:42.421 +01:00 [INF] Cookies received: .AspNetCore.Antiforgery.lR7t4MXUUZs=CfDJ8FYKQg2-tzVDp03-Gqv4Alp0e2kDKTpS7ycju9zsrFEctUbGhXGgm-TR2OGRtNiDSW2-yLD_U9ztu3gK8l94pzxhlcgICY-WqKInqucCSG5DxX1CJdczsvzTSLcIdT395LhAveMj_2LRO4FR08fdmRA, .AspNetCore.Identity.Application=CfDJ8FYKQg2-tzVDp03-Gqv4AlpjfBQzdO1GrHCY80sEWkUusv544Fo_-918F0L1yKReZyaFj47xLl8Z9y8tPeKpVNm14yMhg05k4r03nyubAGnnoNCjrX5pKdM9mogcWczdFIyhy2x7LwzXUudTUGitQsJpHbXb0keUGtgr3N9bRY7sIngZnb50KpmINlZjnk16OytZcRu3lD1TqX7Inm3QcgoIjufw7lHRLVO5-Phge54I-bZJ3sa2lpnzBjdIe3IINOhH450bOjM43qMiPT2rSZrXFCBsJLwTigA1xSBlQizIdGEjJDw1aAI709LxogIgGWAbO6ruF9PTNEQwbFZ16K5DoT0e6EY-JpbtrKJZizfBP1kom2km_XFxAA5SuVZyVkL4wqxlW_MELWoClSFOMK6_fCMqk8WxKLYMCK2XJl9u8pIuCCFH8Ddw_M_-CYyTM2i6wMvNhT9LjpAAwX0oV4CFP8coJLKn0uQqGeFPeCqO2EFhG4JJI93_0dCK_OWhv3lIRjUnwCRrudOT-DTV9IzRz3ZSzEeVvFHzQPkoVCEQtMIKHphlkcUNnGQXP7RXCvgRdlxpHIhQsyUsPD1Ij7aBxAicViHjhWxYkE-tSWcw5Zqx_0suXx1sgEUqGSKfOQxZvZWSS8hsLD54Fsa7wTiOdljv7KuNQb7LOD8CRJlUCF7vEbXWo8oWZFa0EXOVkZha2U-lSyx0gtHj-V-uXpWNnv8z3nNPQ01LXaTZw2fM
+2024-11-10 15:37:42.424 +01:00 [INF] GetUserInfo called:
+2024-11-10 15:37:42.427 +01:00 [INF] IsAuthenticated: True
+2024-11-10 15:37:42.431 +01:00 [INF] UserName: mattt@mail.no
+2024-11-10 15:37:42.434 +01:00 [INF] Claims: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier: a5d92c7b-854e-4218-9d1b-1174cb1b5101, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: mattt@mail.no, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress: mattt@mail.no, AspNet.Identity.SecurityStamp: TPLXA72B2YUAUIXCYAO3TS56LPSOSXUU, amr: pwd
+2024-11-10 15:37:42.438 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier = a5d92c7b-854e-4218-9d1b-1174cb1b5101
+2024-11-10 15:37:42.442 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name = mattt@mail.no
+2024-11-10 15:37:42.445 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress = mattt@mail.no
+2024-11-10 15:37:42.448 +01:00 [INF] Claim: AspNet.Identity.SecurityStamp = TPLXA72B2YUAUIXCYAO3TS56LPSOSXUU
+2024-11-10 15:37:42.452 +01:00 [INF] Claim: amr = pwd
+2024-11-10 15:37:42.456 +01:00 [INF] Returning response: {"isAuthenticated":true,"userName":"mattt@mail.no","manageUrl":"/Identity/Account/Manage","logoutUrl":"/Identity/Account/Logout","loginUrl":"/Identity/Account/Login","registerUrl":"/Identity/Account/Register"}
+2024-11-10 15:37:42.457 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-10 15:37:42.458 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 175.3693ms
+2024-11-10 15:37:42.458 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-10 15:37:42.459 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - 200 null application/json; charset=utf-8 184.5087ms
+2024-11-10 15:37:46.399 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/Identity/Account/Logout?ReturnUrl=http%3A%2F%2Flocalhost%3A3000 - null null
+2024-11-10 15:37:46.402 +01:00 [INF] CORS policy execution successful.
+2024-11-10 15:37:46.403 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/Identity/Account/Logout?ReturnUrl=http%3A%2F%2Flocalhost%3A3000 - 204 null null 4.5922ms
+2024-11-10 15:37:46.406 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/Identity/Account/Logout?ReturnUrl=http%3A%2F%2Flocalhost%3A3000 - application/json 0
+2024-11-10 15:37:46.413 +01:00 [INF] CORS policy execution successful.
+2024-11-10 15:37:46.420 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-11-10 15:37:46.455 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-10 15:37:46.463 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/Identity/Account/Logout?ReturnUrl=http%3A%2F%2Flocalhost%3A3000 - 500 null text/plain; charset=utf-8 56.9086ms
+2024-11-10 15:37:46.496 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/Logout?ReturnUrl=http%3A%2F%2Flocalhost%3A3000 - null null
+2024-11-10 15:37:46.501 +01:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-11-10 15:37:46.512 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.<>c__DisplayClass0_0.<<HandleAsync>g__Handle|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-11-10 15:37:46.551 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/Logout?ReturnUrl=http%3A%2F%2Flocalhost%3A3000 - 500 null text/html; charset=utf-8 55.6604ms
+2024-11-10 15:38:05.751 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - null null
+2024-11-10 15:38:05.752 +01:00 [INF] CORS policy execution successful.
+2024-11-10 15:38:05.753 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-10 15:38:05.753 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-10 15:38:05.792 +01:00 [INF] Authentication result: True
+2024-11-10 15:38:05.818 +01:00 [INF] Principal Name from auth result: mattt@mail.no
+2024-11-10 15:38:05.823 +01:00 [INF] Request path: /api/Auth/userinfo
+2024-11-10 15:38:05.829 +01:00 [INF] Request method: GET
+2024-11-10 15:38:05.834 +01:00 [INF] Request scheme: http
+2024-11-10 15:38:05.845 +01:00 [INF] Auth Type: Identity.Application
+2024-11-10 15:38:05.861 +01:00 [INF] Identity Name: mattt@mail.no
+2024-11-10 15:38:05.906 +01:00 [INF] User from UserManager: null
+2024-11-10 15:38:05.918 +01:00 [INF] Cookies received: .AspNetCore.Antiforgery.lR7t4MXUUZs=CfDJ8FYKQg2-tzVDp03-Gqv4Alp0e2kDKTpS7ycju9zsrFEctUbGhXGgm-TR2OGRtNiDSW2-yLD_U9ztu3gK8l94pzxhlcgICY-WqKInqucCSG5DxX1CJdczsvzTSLcIdT395LhAveMj_2LRO4FR08fdmRA, .AspNetCore.Identity.Application=CfDJ8FYKQg2-tzVDp03-Gqv4AlpjfBQzdO1GrHCY80sEWkUusv544Fo_-918F0L1yKReZyaFj47xLl8Z9y8tPeKpVNm14yMhg05k4r03nyubAGnnoNCjrX5pKdM9mogcWczdFIyhy2x7LwzXUudTUGitQsJpHbXb0keUGtgr3N9bRY7sIngZnb50KpmINlZjnk16OytZcRu3lD1TqX7Inm3QcgoIjufw7lHRLVO5-Phge54I-bZJ3sa2lpnzBjdIe3IINOhH450bOjM43qMiPT2rSZrXFCBsJLwTigA1xSBlQizIdGEjJDw1aAI709LxogIgGWAbO6ruF9PTNEQwbFZ16K5DoT0e6EY-JpbtrKJZizfBP1kom2km_XFxAA5SuVZyVkL4wqxlW_MELWoClSFOMK6_fCMqk8WxKLYMCK2XJl9u8pIuCCFH8Ddw_M_-CYyTM2i6wMvNhT9LjpAAwX0oV4CFP8coJLKn0uQqGeFPeCqO2EFhG4JJI93_0dCK_OWhv3lIRjUnwCRrudOT-DTV9IzRz3ZSzEeVvFHzQPkoVCEQtMIKHphlkcUNnGQXP7RXCvgRdlxpHIhQsyUsPD1Ij7aBxAicViHjhWxYkE-tSWcw5Zqx_0suXx1sgEUqGSKfOQxZvZWSS8hsLD54Fsa7wTiOdljv7KuNQb7LOD8CRJlUCF7vEbXWo8oWZFa0EXOVkZha2U-lSyx0gtHj-V-uXpWNnv8z3nNPQ01LXaTZw2fM
+2024-11-10 15:38:05.925 +01:00 [INF] GetUserInfo called:
+2024-11-10 15:38:05.929 +01:00 [INF] IsAuthenticated: True
+2024-11-10 15:38:05.935 +01:00 [INF] UserName: mattt@mail.no
+2024-11-10 15:38:05.945 +01:00 [INF] Claims: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier: a5d92c7b-854e-4218-9d1b-1174cb1b5101, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: mattt@mail.no, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress: mattt@mail.no, AspNet.Identity.SecurityStamp: TPLXA72B2YUAUIXCYAO3TS56LPSOSXUU, amr: pwd
+2024-11-10 15:38:05.952 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier = a5d92c7b-854e-4218-9d1b-1174cb1b5101
+2024-11-10 15:38:05.956 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name = mattt@mail.no
+2024-11-10 15:38:05.961 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress = mattt@mail.no
+2024-11-10 15:38:05.966 +01:00 [INF] Claim: AspNet.Identity.SecurityStamp = TPLXA72B2YUAUIXCYAO3TS56LPSOSXUU
+2024-11-10 15:38:05.971 +01:00 [INF] Claim: amr = pwd
+2024-11-10 15:38:05.976 +01:00 [INF] Returning response: {"isAuthenticated":true,"userName":"mattt@mail.no","manageUrl":"/Identity/Account/Manage","logoutUrl":"/Identity/Account/Logout","loginUrl":"/Identity/Account/Login","registerUrl":"/Identity/Account/Register"}
+2024-11-10 15:38:05.976 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-10 15:38:05.977 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 223.6219ms
+2024-11-10 15:38:05.977 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-10 15:38:05.977 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - 200 null application/json; charset=utf-8 226.0927ms
+2024-11-10 15:38:05.980 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - null null
+2024-11-10 15:38:05.981 +01:00 [INF] CORS policy execution successful.
+2024-11-10 15:38:05.982 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-10 15:38:05.983 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-10 15:38:05.993 +01:00 [INF] Authentication result: True
+2024-11-10 15:38:05.998 +01:00 [INF] Principal Name from auth result: mattt@mail.no
+2024-11-10 15:38:06.003 +01:00 [INF] Request path: /api/Auth/userinfo
+2024-11-10 15:38:06.007 +01:00 [INF] Request method: GET
+2024-11-10 15:38:06.012 +01:00 [INF] Request scheme: http
+2024-11-10 15:38:06.018 +01:00 [INF] Auth Type: Identity.Application
+2024-11-10 15:38:06.022 +01:00 [INF] Identity Name: mattt@mail.no
+2024-11-10 15:38:06.039 +01:00 [INF] User from UserManager: null
+2024-11-10 15:38:06.043 +01:00 [INF] Cookies received: .AspNetCore.Antiforgery.lR7t4MXUUZs=CfDJ8FYKQg2-tzVDp03-Gqv4Alp0e2kDKTpS7ycju9zsrFEctUbGhXGgm-TR2OGRtNiDSW2-yLD_U9ztu3gK8l94pzxhlcgICY-WqKInqucCSG5DxX1CJdczsvzTSLcIdT395LhAveMj_2LRO4FR08fdmRA, .AspNetCore.Identity.Application=CfDJ8FYKQg2-tzVDp03-Gqv4AlpjfBQzdO1GrHCY80sEWkUusv544Fo_-918F0L1yKReZyaFj47xLl8Z9y8tPeKpVNm14yMhg05k4r03nyubAGnnoNCjrX5pKdM9mogcWczdFIyhy2x7LwzXUudTUGitQsJpHbXb0keUGtgr3N9bRY7sIngZnb50KpmINlZjnk16OytZcRu3lD1TqX7Inm3QcgoIjufw7lHRLVO5-Phge54I-bZJ3sa2lpnzBjdIe3IINOhH450bOjM43qMiPT2rSZrXFCBsJLwTigA1xSBlQizIdGEjJDw1aAI709LxogIgGWAbO6ruF9PTNEQwbFZ16K5DoT0e6EY-JpbtrKJZizfBP1kom2km_XFxAA5SuVZyVkL4wqxlW_MELWoClSFOMK6_fCMqk8WxKLYMCK2XJl9u8pIuCCFH8Ddw_M_-CYyTM2i6wMvNhT9LjpAAwX0oV4CFP8coJLKn0uQqGeFPeCqO2EFhG4JJI93_0dCK_OWhv3lIRjUnwCRrudOT-DTV9IzRz3ZSzEeVvFHzQPkoVCEQtMIKHphlkcUNnGQXP7RXCvgRdlxpHIhQsyUsPD1Ij7aBxAicViHjhWxYkE-tSWcw5Zqx_0suXx1sgEUqGSKfOQxZvZWSS8hsLD54Fsa7wTiOdljv7KuNQb7LOD8CRJlUCF7vEbXWo8oWZFa0EXOVkZha2U-lSyx0gtHj-V-uXpWNnv8z3nNPQ01LXaTZw2fM
+2024-11-10 15:38:06.047 +01:00 [INF] GetUserInfo called:
+2024-11-10 15:38:06.053 +01:00 [INF] IsAuthenticated: True
+2024-11-10 15:38:06.058 +01:00 [INF] UserName: mattt@mail.no
+2024-11-10 15:38:06.061 +01:00 [INF] Claims: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier: a5d92c7b-854e-4218-9d1b-1174cb1b5101, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: mattt@mail.no, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress: mattt@mail.no, AspNet.Identity.SecurityStamp: TPLXA72B2YUAUIXCYAO3TS56LPSOSXUU, amr: pwd
+2024-11-10 15:38:06.065 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier = a5d92c7b-854e-4218-9d1b-1174cb1b5101
+2024-11-10 15:38:06.071 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name = mattt@mail.no
+2024-11-10 15:38:06.078 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress = mattt@mail.no
+2024-11-10 15:38:06.129 +01:00 [INF] Claim: AspNet.Identity.SecurityStamp = TPLXA72B2YUAUIXCYAO3TS56LPSOSXUU
+2024-11-10 15:38:06.145 +01:00 [INF] Claim: amr = pwd
+2024-11-10 15:38:06.154 +01:00 [INF] Returning response: {"isAuthenticated":true,"userName":"mattt@mail.no","manageUrl":"/Identity/Account/Manage","logoutUrl":"/Identity/Account/Logout","loginUrl":"/Identity/Account/Login","registerUrl":"/Identity/Account/Register"}
+2024-11-10 15:38:06.155 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-10 15:38:06.155 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 171.6036ms
+2024-11-10 15:38:06.156 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-10 15:38:06.156 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - 200 null application/json; charset=utf-8 175.8913ms

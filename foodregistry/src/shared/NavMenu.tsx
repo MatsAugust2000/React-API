@@ -1,29 +1,25 @@
 import React from 'react';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
+import LoginPartial from './LoginPartial';
+import '../css/NavMenu.css';
 
 const NavMenu: React.FC = () => {
   return (
-    <Navbar expand="lg">
-      <Navbar.Brand href="/">Food Registry</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="me-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/products">Products</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              Another action
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Item />
-            <NavDropdown.Item href="#action/3.4">
-              Separated link
-            </NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-      </Navbar.Collapse>
-  </Navbar>
+    <Navbar bg="light" expand="lg" className='navbar-custom mb3'>
+      <Container>
+        <Navbar.Brand as={Link} to="/" className='brand'>Food Registry</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/products">Products</Nav.Link>
+          </Nav>
+          <LoginPartial/>
+        </Navbar.Collapse>
+      </Container>
+      
+    </Navbar>
   );
 };
 

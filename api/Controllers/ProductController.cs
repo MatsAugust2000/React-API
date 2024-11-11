@@ -57,6 +57,7 @@ public class ProductAPIController : Controller
         return Ok(productDtos);
     }
 
+    [Authorize(AuthenticationSchemes = "Identity.Application")]
     [HttpPost("create")]
     public async Task<IActionResult> Create([FromBody] ProductDto productDto)
     {
@@ -94,6 +95,7 @@ public class ProductAPIController : Controller
         return Ok(product);
     }
 
+    [Authorize(AuthenticationSchemes = "Identity.Application")]
     [HttpPut("update/{id}")]
     public async Task<IActionResult> Update(int id, [FromBody] ProductDto productDto)
     {
@@ -126,6 +128,7 @@ public class ProductAPIController : Controller
         return StatusCode(500, "Internal server error");
     }
 
+    [Authorize(AuthenticationSchemes = "Identity.Application")]
     [HttpDelete("delete/{id}")]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
@@ -157,20 +160,20 @@ public class ProductAPIController : Controller
     }
 
     public class NutritionCalculationRequest
-{
-    public string Category { get; set; }
-    public double Calories { get; set; }
-    public double SaturatedFat { get; set; }
-    public double Sugar { get; set; }
-    public double Salt { get; set; }
-    public double Fibre { get; set; }
-    public double Protein { get; set; }
-    public double FruitOrVeg { get; set; }
+    {
+        public string Category { get; set; } = string.Empty;
+        public double Calories { get; set; }
+        public double SaturatedFat { get; set; }
+        public double Sugar { get; set; }
+        public double Salt { get; set; }
+        public double Fibre { get; set; }
+        public double Protein { get; set; }
+        public double FruitOrVeg { get; set; }
+    }
+
 }
 
-
-}
-
+[Authorize(AuthenticationSchemes = "Identity.Application")]
 public class ProductController : Controller 
 {
     private readonly IProductRepository _productRepository;
@@ -218,6 +221,7 @@ public class ProductController : Controller
     }
 
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create([Bind("ProductId,Name,Category,Nutrition,NutriScore,Price,Description")] Product product)
     {
         if (ModelState.IsValid)
@@ -275,6 +279,7 @@ public class ProductController : Controller
     }
     
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> Update(int id, [Bind("ProductId,Name,Category,Nutrition,NutriScore,Price,Description")] Product product)
     {
         
@@ -350,6 +355,7 @@ public class ProductController : Controller
         return View(product);
     }
     [HttpPost]
+    [ValidateAntiForgeryToken]
     public async Task<IActionResult> DeleteConfirmed(int id)
     {
         bool returnOk = await _productRepository.Delete(id);
