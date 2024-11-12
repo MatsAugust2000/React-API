@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, InputGroup } from 'react-bootstrap';
 import ProductTable from './ProductTable';
 import ProductGrid from './ProductGrid';
 import { Product } from '../types/product';
@@ -77,26 +77,34 @@ const ProductListPage: React.FC = () => {
     <div>
       <h1>Products</h1>
       <Button onClick={fetchProducts} className="btn btn-primary mb-3 me-2" disabled={loading}>
-        {loading ? 'Loading...' : 'Refresh Products'}
+        <i className="bi bi-arrow-clockwise"></i> 
+        {loading ? ' Loading...' : ' Refresh Products'}
       </Button>
       <Button onClick={toggleTableOrGrid} className="btn btn-primary mb-3 me-2">
-        {showTable ? `Display Grid` : 'Display Table'}
+        {showTable ? <i className="bi bi-grid"></i> : <i className="bi bi-list-ul"></i>}
+      </Button>
+      <Button href='/productcreate' className="btn btn-secondary mb-3 me-2">
+      <i className="bi bi-pencil-square"></i> New Product
       </Button>
       <Form.Group className="mb-3">
+        <InputGroup>
+        <InputGroup.Text>
+          <i className="bi bi-search"></i>
+        </InputGroup.Text>
         <Form.Control
           type="text"
-          placeholder="Search by name or description"
+          placeholder='Search by name or description'
           value={searchQuery}
           onChange={e => setSearchQuery(e.target.value)}
         />
+        
+        </InputGroup>
       </Form.Group>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {showTable
         ? <ProductTable products={filteredProducts} apiUrl={API_URL} onProductDeleted={handleProductDeleted} />
         : <ProductGrid products={filteredProducts} apiUrl={API_URL} onProductDeleted={handleProductDeleted} />}
-      <Button href='/productcreate' className="btn btn-secondary mt-3">
-          Add New Product
-      </Button>
+      
       {showUnauthorizedError && (
         <ErrorPopup onClose={() => setShowUnauthorizedError(false)} />
       )}

@@ -10,9 +10,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const HomePage: React.FC = () => {
   return (
       <div className="text-center">
-        <div className='text-center mt-5'>
-          <h1 className="display-4">Welcome to Food Registry&#8482;</h1>
-        </div>
+        
         <div className='carousel-wrapper'>
         <Carousel id="carouselHome" className='full-width-carousel'>
           <Carousel.Item>
@@ -72,6 +70,9 @@ const HomePage: React.FC = () => {
           </Carousel.Item>
         </Carousel>
       </div>
+      <div className='text-center mt-5'>
+          <h1 className="display-4">Welcome to Food Registry&#8482;</h1>
+        </div>
 
       <section className="section section-light">
         <h2 className="h2">About the Service</h2>

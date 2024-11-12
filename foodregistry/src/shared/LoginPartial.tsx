@@ -34,20 +34,25 @@ const LoginPartial: React.FC = () => {
     }
 
     return (
-        <Nav className="ms-auto">
+        <Nav className="ms-auto" style={{width: '100px'}}>
             {isAuthenticated ? (
                 <>
                   <NavDropdown
-                      title={`User: ${getDisplayName(user?.userName)}`}//`${user?.userName}`} 
+                      title={
+                        <>
+                        <i className="bi bi-person-circle me-1"></i>
+                        {getDisplayName(user?.userName)}
+                        </>
+                      }
                       id="user-dropdown"
                       className="me-2"
                   >
                       <NavDropdown.Item href="/Identity/Account/Manage">
-                          Manage Account
+                      <i className="bi bi-person-lines-fill"></i>  Account
                       </NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item onClick={handleLogout}>
-                          Logout
+                      <i className="bi bi-box-arrow-right"></i> Logout
                       </NavDropdown.Item>
                   </NavDropdown>
                 </>
