@@ -28,7 +28,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product, apiUrl }) => {
           <img 
             alt={product.name} 
             src={`${apiUrl}${product.imageUrl}`} 
-            className="img-fluid col-5"
+            className="image-details col-5"
           />
           <div className="col-7">
             <h5>{product.description}</h5>
@@ -50,7 +50,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product, apiUrl }) => {
               className="btn btn-secondary mb-2" 
               onClick={() => navigate('/products')}
             >
-              Back to Table View
+              <i className='bi bi-list-ul'></i> Back to Table View
             </button>
           </div>
         </div>

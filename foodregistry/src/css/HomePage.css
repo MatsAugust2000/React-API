@@ -15,12 +15,15 @@ body, html {
 @media (max-width: 768px) {
     .carousel-image-container {
       height: 400px; /* Smaller height for mobile */
+      margin-bottom: -180px;
     }
 
     .caption-bg {
       padding: 10px;
-    }
+      display:none;
 
+    }
+/*
     .caption-bg h5 {
       font-size: 1.1rem;
     }
@@ -31,6 +34,7 @@ body, html {
 
     .carousel-caption {
       padding: 10px;
+
     }
     
     .carousel-caption h5 {
@@ -40,7 +44,7 @@ body, html {
     .carousel-caption p {
       font-size: 0.9rem;
     }
-
+*/
     .section {
         padding: 2rem 1rem;
       }
@@ -48,6 +52,7 @@ body, html {
     .feature-card {
         padding: 1rem;
     }
+        
 }
 
 .carousel-caption{
@@ -78,6 +83,8 @@ body, html {
   margin-left: -50vw;
   margin-right: -50vw;
   margin-bottom: 2rem;
+  top: -40px;
+  
 }
 
 .full-width-carousel {
@@ -88,12 +95,15 @@ body, html {
   width: 100%;
   height: 600px; /* Adjust this value to your needs */
   overflow: hidden;
+  z-index: -100;
+
 }
 
 .carousel-image {
   width: 100%;
   height: 100%;
   object-fit:cover; /* This ensures the image covers the area without distortion */
+
 }
 
 /* Section styles */
@@ -170,7 +180,7 @@ body, html {
 
 .display-4{
     margin-top: -50px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-weight:400;
     white-space: normal;
     text-align: center;

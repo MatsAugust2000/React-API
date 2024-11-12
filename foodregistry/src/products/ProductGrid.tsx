@@ -41,8 +41,8 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products, apiUrl, onProductDe
                   Price: {product.price} NOK
                 </Card.Text>
                 <div className="d-flex justify-content-between">
-                    <Button href={`/productupdate/${product.productId}`} variant="primary">Update</Button>
-                    <Button onClick={(event) => onProductDeleted(product.productId)} variant="danger">Delete</Button>                    
+                    <Button href={`/productupdate/${product.productId}`} variant="primary"><i className="bi bi-pencil-square"></i></Button>
+                    <Button onClick={(event) => onProductDeleted(product.productId)} variant="danger"><i className='bi bi-trash'></i></Button>                    
                 </div>                
               </Card.Body>
             </Card>

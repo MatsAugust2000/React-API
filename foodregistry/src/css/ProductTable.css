@@ -6,6 +6,7 @@
   .table {
     margin-bottom: 0;
     white-space: nowrap;
+
   }
   
   @media (max-width: 768px) {
@@ -24,11 +25,13 @@
   }
   
   .img-fluid {
-    transition: transform 0.2s;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   }
   
   .img-fluid:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
   }
   
   /* Optional: Add zebra striping with a more subtle color */
@@ -52,3 +55,10 @@
     border-color: #00070d;
   }
 
+  .description{
+    font-size: x-small;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: wrap;
+  }

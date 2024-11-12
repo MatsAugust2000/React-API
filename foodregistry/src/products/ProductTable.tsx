@@ -21,6 +21,7 @@ export const getScoreClass = (score: string): string => {
 const ProductTable: React.FC<ProductTableProps> = ({ products, apiUrl, onProductDeleted }) => {
   const [showImages, setShowImages] = useState<boolean>(true);
   const [showDescriptions, setShowDescriptions] = useState<boolean>(true);
+  const [showNutrition, setShowNutrition] = useState<boolean>(true);
   //const toggleImages = () => setShowImages(prevShowImages => !prevShowImages);
   //const toggleDescriptions = () => setShowDescriptions(prevShowDescriptions => !prevShowDescriptions);
 
@@ -31,17 +32,27 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, apiUrl, onProduct
         <Col>
           <Button 
             onClick={() => setShowDescriptions(!showDescriptions)} 
-            className="btn btn-outline-primary me-2"
+            className="btn btn-primary me-2"
             size="sm"
           >
-            {showDescriptions ? 'Hide Descriptions' : 'Show Descriptions'}
+            <i className="bi bi-card-text"></i>
+            {showDescriptions ? ' Hide' : ' Show'}
           </Button>
           <Button 
             onClick={() => setShowImages(!showImages)} 
-            className="btn btn-outline-primary"
+            className="btn btn-primary me-2"
             size="sm"
           >
-            {showImages ? 'Hide Images' : 'Show Images'}
+            <i className="bi bi-images"></i> 
+            {showImages ? ' Hide' : ' Show'}
+          </Button>
+          <Button 
+            onClick={() => setShowNutrition(!showNutrition)} 
+            className="btn btn-primary"
+            size="sm"
+          >
+            <i className="bi bi-clipboard-data"></i> 
+            {showNutrition ? ' Hide' : ' Show'}
           </Button>
         </Col>
       </Row>
@@ -59,12 +70,12 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, apiUrl, onProduct
                 <tr>
                   <th className="align-middle">ID</th>
                   <th className="align-middle">Name</th>
-                  <th className="align-middle">Category</th>
-                  <th className="align-middle">Nutrition</th>
-                  <th className="align-middle">NutriScore</th>
-                  <th className="align-middle">Price</th>
-                  {showDescriptions && <th className="align-middle">Description</th>}
                   {showImages && <th className="align-middle">Image</th>}
+                  {showDescriptions && <th className="align-middle">Description</th>}
+                  <th className="align-middle">Price</th>
+                  <th className="align-middle">Category</th>
+                  {showNutrition && <th className="align-middle">Nutrition</th>}
+                  <th className="align-middle">NutriScore</th>
                   <th className="align-middle">Actions</th>
                 </tr>
               </thead>
@@ -80,8 +91,29 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, apiUrl, onProduct
                         {product.name}
                       </Link>
                     </td>
+                    {showImages && (
+                      <td className="align-middle text-center">
+                        <Link 
+                          to={`/productdetails/${product.productId}`}
+                          className='text-decoration-none'
+                        >
+                        <img 
+                          src={`${apiUrl}${product.imageUrl}`} 
+                          alt={product.name} 
+                          className="img-fluid rounded" 
+                          style={{ maxWidth: '120px', height: 'auto' }} 
+                        />
+                        </Link>
+                      </td>
+                    )}
+                    {showDescriptions && (
+                      <td className="align-middle small description">{product.description}</td>
+                    )}
+                    <td className="align-middle">{product.price} NOK</td>
                     <td className="align-middle">{product.category}</td>
-                    <td className="align-middle small">{product.nutrition}</td>
+                    {showNutrition && (
+                      <td className="align-middle small">{product.nutrition}</td>
+                    )}
                     <td className="align-middle text-center">
                       <span className={getScoreClass(product.nutriScore || 'N/A')}>
                         <a 
@@ -95,33 +127,20 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, apiUrl, onProduct
                         </a>
                       </span>
                     </td>
-                    <td className="align-middle">{product.price} NOK</td>
-                    {showDescriptions && (
-                      <td className="align-middle small">{product.description}</td>
-                    )}
-                    {showImages && (
-                      <td className="align-middle text-center">
-                        <img 
-                          src={`${apiUrl}${product.imageUrl}`} 
-                          alt={product.name} 
-                          className="img-fluid rounded" 
-                          style={{ maxWidth: '120px', height: 'auto' }} 
-                        />
-                      </td>
-                    )}
+                    
                     <td className="align-middle text-center">
                       <Link 
                         to={`/productupdate/${product.productId}`}
                         className="btn btn-outline-primary btn-sm me-2"
                       >
-                        Update
+                        <i className="bi bi-pencil-square"></i> Update
                       </Link>
                       <Button
                         variant="outline-danger"
                         size="sm"
                         onClick={() => onProductDeleted(product.productId)}
                       >
-                        Delete
+                        <i className='bi bi-trash'></i> Delete
                       </Button>
                       </td>
                   </tr>
