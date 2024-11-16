@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Col, Row, Button } from 'react-bootstrap';
 import { Product } from '../types/product';
+import { Link } from 'react-router-dom';
 
 interface ProductGridProps {
   products: Product[];
@@ -21,7 +22,12 @@ const ProductGrid: React.FC<ProductGridProps> = ({ products, apiUrl, onProductDe
         {products.map(product => (
           <Col key={product.productId}>
             <Card>
+            <Link 
+              to={`/productdetails/${product.productId}`}
+              className='text-decoration-none'
+            >
               <Card.Img variant="top" src={`${apiUrl}${product.imageUrl}`} alt={product.name} />
+            </Link>
               <Card.Body>
                 <Card.Title>{product.name}</Card.Title>
                 <Card.Text>

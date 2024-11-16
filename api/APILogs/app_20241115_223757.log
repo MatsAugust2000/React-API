@@ -1,0 +1,288 @@
+2024-11-15 22:37:57.775 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-15 22:37:58.225 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-15 22:37:58.228 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-15 22:37:58.236 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-15 22:37:58.239 +01:00 [INF] Hosting environment: Development
+2024-11-15 22:37:58.242 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-15 22:38:00.655 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - null null
+2024-11-15 22:38:00.717 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:38:00.738 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - 204 null null 84.7639ms
+2024-11-15 22:38:00.743 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/create - application/json 219
+2024-11-15 22:38:00.749 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:38:00.774 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.Create (api)'
+2024-11-15 22:38:00.811 +01:00 [INF] Route matched with {action = "Create", controller = "ProductAPI", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(FoodRegistrationTool.DTOs.ProductDto) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-15 22:38:01.874 +01:00 [ERR] Failed executing DbCommand (16ms) [Parameters=[@p0='?' (Size = 9), @p1='?', @p2='?', @p3='?' (Size = 4), @p4='?' (Size = 1), @p5='?' (Size = 89), @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("Category", "Description", "ImageUrl", "Name", "NutriScore", "Nutrition", "Price", "ProducerId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "ProductId";
+2024-11-15 22:38:01.942 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'FoodRegistrationTool.DAL.ProductDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-11-15 22:38:02.123 +01:00 [ERR] [ProductRepository] product creation failed for {"ProductId":0,"Name":"asdf","Category":"SolidFood","Nutrition":"Calories: 0kcal, SaturatedFat: g, Sugar: g, Salt: mg, Fibre: g, Protein: g, FruitOrVeg: %","Price":9.98,"Description":"","ImageUrl":"","NutriScore":"B","ImageFile":null,"ProducerId":10,"$type":"Product"}, error message: An error occurred while saving the entity changes. See the inner exception for details.
+2024-11-15 22:38:02.129 +01:00 [WRN] [ProductAPIController] Product creation failed {"ProductId":0,"Name":"asdf","Category":"SolidFood","Nutrition":"Calories: 0kcal, SaturatedFat: g, Sugar: g, Salt: mg, Fibre: g, Protein: g, FruitOrVeg: %","Price":9.98,"Description":"","ImageUrl":"","NutriScore":"B","ImageFile":null,"ProducerId":10,"$type":"Product"}
+2024-11-15 22:38:02.136 +01:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-11-15 22:38:02.145 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.Create (api) in 1326.7481ms
+2024-11-15 22:38:02.145 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.Create (api)'
+2024-11-15 22:38:02.159 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/create - 500 null text/plain; charset=utf-8 1415.6695ms
+2024-11-15 22:38:06.957 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - null null
+2024-11-15 22:38:06.966 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-15 22:38:06.967 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:38:06.979 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-15 22:38:06.981 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:38:06.983 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-15 22:38:06.990 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-15 22:38:07.003 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-15 22:38:07.042 +01:00 [INF] Authentication result: True
+2024-11-15 22:38:07.048 +01:00 [INF] Principal Name from auth result: mat@mail.no
+2024-11-15 22:38:07.055 +01:00 [INF] Request path: /api/Auth/userinfo
+2024-11-15 22:38:07.060 +01:00 [INF] Request method: GET
+2024-11-15 22:38:07.065 +01:00 [INF] Request scheme: http
+2024-11-15 22:38:07.071 +01:00 [INF] Auth Type: Identity.Application
+2024-11-15 22:38:07.075 +01:00 [INF] Identity Name: mat@mail.no
+2024-11-15 22:38:07.581 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-15 22:38:07.599 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 595.7151ms
+2024-11-15 22:38:07.599 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-15 22:38:07.600 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 200 null application/json; charset=utf-8 633.8012ms
+2024-11-15 22:38:07.603 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - null null
+2024-11-15 22:38:07.603 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:38:07.604 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-15 22:38:07.605 +01:00 [INF] Route matched with {action = "ProductList", controller = "ProductAPI", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ProductList() on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-15 22:38:07.638 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[FoodRegistrationTool.Models.Product, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[FoodRegistrationTool.DTOs.ProductDto, api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-15 22:38:07.640 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api) in 34.7467ms
+2024-11-15 22:38:07.640 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.ProductList (api)'
+2024-11-15 22:38:07.640 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/productapi/productlist - 200 null application/json; charset=utf-8 37.455ms
+2024-11-15 22:38:07.676 +01:00 [INF] User from UserManager: mat@mail.no
+2024-11-15 22:38:07.683 +01:00 [INF] Cookies received: .AspNetCore.Antiforgery.lR7t4MXUUZs=CfDJ8FYKQg2-tzVDp03-Gqv4Alp0e2kDKTpS7ycju9zsrFEctUbGhXGgm-TR2OGRtNiDSW2-yLD_U9ztu3gK8l94pzxhlcgICY-WqKInqucCSG5DxX1CJdczsvzTSLcIdT395LhAveMj_2LRO4FR08fdmRA, .AspNetCore.Antiforgery.dw7AqgzwEUQ=CfDJ8FYKQg2-tzVDp03-Gqv4AlpuJ5WrZvfgIbXDPlmvconEJ-859cdE6UsmGy6Ny_h3xsB8bbMaYwmszbCZtWzqapxdW81rlL4KfGCSslVgx3lRLADMmzN7o6yVPQJ44NQ3MnhGpLSl3G4_OADRKjpKDNY, .AspNetCore.Identity.Application=CfDJ8FYKQg2-tzVDp03-Gqv4AlrVKDUXh-U4Yz4d_Ps03kRC8sStlVUc6zok3dGe8Be2jfyC2N6eknl7PiH9cnK6ugInZu22prkNQ2J36yuKpTeLlvgFeS2ZyDIOBaisruStEAVOy-gAW8tuVeUFRpnShbqZmB9Cya5-PcvZARbTS_JMtCTAMSQGGXJVxmNuBH49FPr_z3XWb-0gEm8rlivZQYYGi2F3OQhN8emKlkPVGIHSARP1fPq88xQjjXPRqLSqeOrhA17TFhnaVRReOn3eMFQXOCSX1PYXzml3r6tKD4dthPFZyIWDIFkoothAvsuQky3-7XVqkUjjPWddH5iSoNBOPaSSCoolfjoqoJWwIilhe0k9V1NU4qjVqlGrM_GhqQ4TOu5ueP2ulFfqquEoqU8aKvSDsLsg_u-p8vjMAQl6i3KptPpjm0U_bhXJAKcvMEg0E00salyuL1WBvQLxKuxdD6Ub0usJxZpnbJM6HGsGuMMn-X1XgEdZc9xTJz5Zty74krOosZ0LXUPXSl3m_vE80SFGmaJ2KqFjlLCdnORQM2RG3D-aZdqzrJDz_AWNziEmvUZgw89UEM8rRx3LV6zDHzCiXxZ6uCDtBvzP3mMdMi9jet7E4bMjl4pOvfXh-1JLvZEFLgNGeOi9iEw5DCmTwMi-oXXtRTWUYZna4JeYIyoksuq38Dfy9ttfhl5mayp7iSNDyLs2NFYMuZ6CyEvrqjTmgFZEccG0Yvmn9zbW
+2024-11-15 22:38:07.688 +01:00 [INF] GetUserInfo called:
+2024-11-15 22:38:07.692 +01:00 [INF] IsAuthenticated: True
+2024-11-15 22:38:07.696 +01:00 [INF] UserName: mat@mail.no
+2024-11-15 22:38:07.703 +01:00 [INF] Claims: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier: 8df6c300-5642-4f3b-886c-ab5b35131618, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: mat@mail.no, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress: mat@mail.no, AspNet.Identity.SecurityStamp: ZKOOAEV6UFQX5UCYRLBA3XDYCB7J6EQZ
+2024-11-15 22:38:07.707 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier = 8df6c300-5642-4f3b-886c-ab5b35131618
+2024-11-15 22:38:07.712 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name = mat@mail.no
+2024-11-15 22:38:07.716 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress = mat@mail.no
+2024-11-15 22:38:07.719 +01:00 [INF] Claim: AspNet.Identity.SecurityStamp = ZKOOAEV6UFQX5UCYRLBA3XDYCB7J6EQZ
+2024-11-15 22:38:07.748 +01:00 [INF] Returning response: {"isAuthenticated":true,"userName":"mat@mail.no","manageUrl":"/Identity/Account/Manage","logoutUrl":"/Identity/Account/Logout","loginUrl":"/Identity/Account/Login","registerUrl":"/Identity/Account/Register"}
+2024-11-15 22:38:07.751 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-15 22:38:07.755 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 764.0117ms
+2024-11-15 22:38:07.755 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-15 22:38:07.758 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - 200 null application/json; charset=utf-8 800.7628ms
+2024-11-15 22:38:07.758 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - null null
+2024-11-15 22:38:07.761 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:38:07.762 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-15 22:38:07.762 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-15 22:38:07.771 +01:00 [INF] Authentication result: True
+2024-11-15 22:38:07.776 +01:00 [INF] Principal Name from auth result: mat@mail.no
+2024-11-15 22:38:07.781 +01:00 [INF] Request path: /api/Auth/userinfo
+2024-11-15 22:38:07.784 +01:00 [INF] Request method: GET
+2024-11-15 22:38:07.787 +01:00 [INF] Request scheme: http
+2024-11-15 22:38:07.791 +01:00 [INF] Auth Type: Identity.Application
+2024-11-15 22:38:07.796 +01:00 [INF] Identity Name: mat@mail.no
+2024-11-15 22:38:07.819 +01:00 [INF] User from UserManager: mat@mail.no
+2024-11-15 22:38:07.823 +01:00 [INF] Cookies received: .AspNetCore.Antiforgery.lR7t4MXUUZs=CfDJ8FYKQg2-tzVDp03-Gqv4Alp0e2kDKTpS7ycju9zsrFEctUbGhXGgm-TR2OGRtNiDSW2-yLD_U9ztu3gK8l94pzxhlcgICY-WqKInqucCSG5DxX1CJdczsvzTSLcIdT395LhAveMj_2LRO4FR08fdmRA, .AspNetCore.Antiforgery.dw7AqgzwEUQ=CfDJ8FYKQg2-tzVDp03-Gqv4AlpuJ5WrZvfgIbXDPlmvconEJ-859cdE6UsmGy6Ny_h3xsB8bbMaYwmszbCZtWzqapxdW81rlL4KfGCSslVgx3lRLADMmzN7o6yVPQJ44NQ3MnhGpLSl3G4_OADRKjpKDNY, .AspNetCore.Identity.Application=CfDJ8FYKQg2-tzVDp03-Gqv4AlrVKDUXh-U4Yz4d_Ps03kRC8sStlVUc6zok3dGe8Be2jfyC2N6eknl7PiH9cnK6ugInZu22prkNQ2J36yuKpTeLlvgFeS2ZyDIOBaisruStEAVOy-gAW8tuVeUFRpnShbqZmB9Cya5-PcvZARbTS_JMtCTAMSQGGXJVxmNuBH49FPr_z3XWb-0gEm8rlivZQYYGi2F3OQhN8emKlkPVGIHSARP1fPq88xQjjXPRqLSqeOrhA17TFhnaVRReOn3eMFQXOCSX1PYXzml3r6tKD4dthPFZyIWDIFkoothAvsuQky3-7XVqkUjjPWddH5iSoNBOPaSSCoolfjoqoJWwIilhe0k9V1NU4qjVqlGrM_GhqQ4TOu5ueP2ulFfqquEoqU8aKvSDsLsg_u-p8vjMAQl6i3KptPpjm0U_bhXJAKcvMEg0E00salyuL1WBvQLxKuxdD6Ub0usJxZpnbJM6HGsGuMMn-X1XgEdZc9xTJz5Zty74krOosZ0LXUPXSl3m_vE80SFGmaJ2KqFjlLCdnORQM2RG3D-aZdqzrJDz_AWNziEmvUZgw89UEM8rRx3LV6zDHzCiXxZ6uCDtBvzP3mMdMi9jet7E4bMjl4pOvfXh-1JLvZEFLgNGeOi9iEw5DCmTwMi-oXXtRTWUYZna4JeYIyoksuq38Dfy9ttfhl5mayp7iSNDyLs2NFYMuZ6CyEvrqjTmgFZEccG0Yvmn9zbW
+2024-11-15 22:38:07.826 +01:00 [INF] GetUserInfo called:
+2024-11-15 22:38:07.831 +01:00 [INF] IsAuthenticated: True
+2024-11-15 22:38:07.835 +01:00 [INF] UserName: mat@mail.no
+2024-11-15 22:38:07.839 +01:00 [INF] Claims: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier: 8df6c300-5642-4f3b-886c-ab5b35131618, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: mat@mail.no, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress: mat@mail.no, AspNet.Identity.SecurityStamp: ZKOOAEV6UFQX5UCYRLBA3XDYCB7J6EQZ
+2024-11-15 22:38:07.843 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier = 8df6c300-5642-4f3b-886c-ab5b35131618
+2024-11-15 22:38:07.847 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name = mat@mail.no
+2024-11-15 22:38:07.850 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress = mat@mail.no
+2024-11-15 22:38:07.854 +01:00 [INF] Claim: AspNet.Identity.SecurityStamp = ZKOOAEV6UFQX5UCYRLBA3XDYCB7J6EQZ
+2024-11-15 22:38:07.859 +01:00 [INF] Returning response: {"isAuthenticated":true,"userName":"mat@mail.no","manageUrl":"/Identity/Account/Manage","logoutUrl":"/Identity/Account/Logout","loginUrl":"/Identity/Account/Login","registerUrl":"/Identity/Account/Register"}
+2024-11-15 22:38:07.859 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-15 22:38:07.860 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 97.5833ms
+2024-11-15 22:38:07.860 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-15 22:38:07.861 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - 200 null application/json; charset=utf-8 101.6898ms
+2024-11-15 22:38:09.195 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - null null
+2024-11-15 22:38:09.196 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:38:09.197 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-15 22:38:09.197 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-15 22:38:09.228 +01:00 [INF] Authentication result: True
+2024-11-15 22:38:09.241 +01:00 [INF] Principal Name from auth result: mat@mail.no
+2024-11-15 22:38:09.249 +01:00 [INF] Request path: /api/Auth/userinfo
+2024-11-15 22:38:09.255 +01:00 [INF] Request method: GET
+2024-11-15 22:38:09.265 +01:00 [INF] Request scheme: http
+2024-11-15 22:38:09.270 +01:00 [INF] Auth Type: Identity.Application
+2024-11-15 22:38:09.281 +01:00 [INF] Identity Name: mat@mail.no
+2024-11-15 22:38:09.296 +01:00 [INF] User from UserManager: mat@mail.no
+2024-11-15 22:38:09.302 +01:00 [INF] Cookies received: .AspNetCore.Antiforgery.lR7t4MXUUZs=CfDJ8FYKQg2-tzVDp03-Gqv4Alp0e2kDKTpS7ycju9zsrFEctUbGhXGgm-TR2OGRtNiDSW2-yLD_U9ztu3gK8l94pzxhlcgICY-WqKInqucCSG5DxX1CJdczsvzTSLcIdT395LhAveMj_2LRO4FR08fdmRA, .AspNetCore.Antiforgery.dw7AqgzwEUQ=CfDJ8FYKQg2-tzVDp03-Gqv4AlpuJ5WrZvfgIbXDPlmvconEJ-859cdE6UsmGy6Ny_h3xsB8bbMaYwmszbCZtWzqapxdW81rlL4KfGCSslVgx3lRLADMmzN7o6yVPQJ44NQ3MnhGpLSl3G4_OADRKjpKDNY, .AspNetCore.Identity.Application=CfDJ8FYKQg2-tzVDp03-Gqv4AlrVKDUXh-U4Yz4d_Ps03kRC8sStlVUc6zok3dGe8Be2jfyC2N6eknl7PiH9cnK6ugInZu22prkNQ2J36yuKpTeLlvgFeS2ZyDIOBaisruStEAVOy-gAW8tuVeUFRpnShbqZmB9Cya5-PcvZARbTS_JMtCTAMSQGGXJVxmNuBH49FPr_z3XWb-0gEm8rlivZQYYGi2F3OQhN8emKlkPVGIHSARP1fPq88xQjjXPRqLSqeOrhA17TFhnaVRReOn3eMFQXOCSX1PYXzml3r6tKD4dthPFZyIWDIFkoothAvsuQky3-7XVqkUjjPWddH5iSoNBOPaSSCoolfjoqoJWwIilhe0k9V1NU4qjVqlGrM_GhqQ4TOu5ueP2ulFfqquEoqU8aKvSDsLsg_u-p8vjMAQl6i3KptPpjm0U_bhXJAKcvMEg0E00salyuL1WBvQLxKuxdD6Ub0usJxZpnbJM6HGsGuMMn-X1XgEdZc9xTJz5Zty74krOosZ0LXUPXSl3m_vE80SFGmaJ2KqFjlLCdnORQM2RG3D-aZdqzrJDz_AWNziEmvUZgw89UEM8rRx3LV6zDHzCiXxZ6uCDtBvzP3mMdMi9jet7E4bMjl4pOvfXh-1JLvZEFLgNGeOi9iEw5DCmTwMi-oXXtRTWUYZna4JeYIyoksuq38Dfy9ttfhl5mayp7iSNDyLs2NFYMuZ6CyEvrqjTmgFZEccG0Yvmn9zbW
+2024-11-15 22:38:09.307 +01:00 [INF] GetUserInfo called:
+2024-11-15 22:38:09.312 +01:00 [INF] IsAuthenticated: True
+2024-11-15 22:38:09.318 +01:00 [INF] UserName: mat@mail.no
+2024-11-15 22:38:09.322 +01:00 [INF] Claims: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier: 8df6c300-5642-4f3b-886c-ab5b35131618, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: mat@mail.no, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress: mat@mail.no, AspNet.Identity.SecurityStamp: ZKOOAEV6UFQX5UCYRLBA3XDYCB7J6EQZ
+2024-11-15 22:38:09.328 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier = 8df6c300-5642-4f3b-886c-ab5b35131618
+2024-11-15 22:38:09.333 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name = mat@mail.no
+2024-11-15 22:38:09.341 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress = mat@mail.no
+2024-11-15 22:38:09.347 +01:00 [INF] Claim: AspNet.Identity.SecurityStamp = ZKOOAEV6UFQX5UCYRLBA3XDYCB7J6EQZ
+2024-11-15 22:38:09.351 +01:00 [INF] Returning response: {"isAuthenticated":true,"userName":"mat@mail.no","manageUrl":"/Identity/Account/Manage","logoutUrl":"/Identity/Account/Logout","loginUrl":"/Identity/Account/Login","registerUrl":"/Identity/Account/Register"}
+2024-11-15 22:38:09.352 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-15 22:38:09.353 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 155.4393ms
+2024-11-15 22:38:09.353 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-15 22:38:09.353 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - 200 null application/json; charset=utf-8 158.5396ms
+2024-11-15 22:38:09.355 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - null null
+2024-11-15 22:38:09.355 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:38:09.356 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-15 22:38:09.356 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-15 22:38:09.362 +01:00 [INF] Authentication result: True
+2024-11-15 22:38:09.368 +01:00 [INF] Principal Name from auth result: mat@mail.no
+2024-11-15 22:38:09.372 +01:00 [INF] Request path: /api/Auth/userinfo
+2024-11-15 22:38:09.376 +01:00 [INF] Request method: GET
+2024-11-15 22:38:09.382 +01:00 [INF] Request scheme: http
+2024-11-15 22:38:09.388 +01:00 [INF] Auth Type: Identity.Application
+2024-11-15 22:38:09.392 +01:00 [INF] Identity Name: mat@mail.no
+2024-11-15 22:38:09.405 +01:00 [INF] User from UserManager: mat@mail.no
+2024-11-15 22:38:09.409 +01:00 [INF] Cookies received: .AspNetCore.Antiforgery.lR7t4MXUUZs=CfDJ8FYKQg2-tzVDp03-Gqv4Alp0e2kDKTpS7ycju9zsrFEctUbGhXGgm-TR2OGRtNiDSW2-yLD_U9ztu3gK8l94pzxhlcgICY-WqKInqucCSG5DxX1CJdczsvzTSLcIdT395LhAveMj_2LRO4FR08fdmRA, .AspNetCore.Antiforgery.dw7AqgzwEUQ=CfDJ8FYKQg2-tzVDp03-Gqv4AlpuJ5WrZvfgIbXDPlmvconEJ-859cdE6UsmGy6Ny_h3xsB8bbMaYwmszbCZtWzqapxdW81rlL4KfGCSslVgx3lRLADMmzN7o6yVPQJ44NQ3MnhGpLSl3G4_OADRKjpKDNY, .AspNetCore.Identity.Application=CfDJ8FYKQg2-tzVDp03-Gqv4AlrVKDUXh-U4Yz4d_Ps03kRC8sStlVUc6zok3dGe8Be2jfyC2N6eknl7PiH9cnK6ugInZu22prkNQ2J36yuKpTeLlvgFeS2ZyDIOBaisruStEAVOy-gAW8tuVeUFRpnShbqZmB9Cya5-PcvZARbTS_JMtCTAMSQGGXJVxmNuBH49FPr_z3XWb-0gEm8rlivZQYYGi2F3OQhN8emKlkPVGIHSARP1fPq88xQjjXPRqLSqeOrhA17TFhnaVRReOn3eMFQXOCSX1PYXzml3r6tKD4dthPFZyIWDIFkoothAvsuQky3-7XVqkUjjPWddH5iSoNBOPaSSCoolfjoqoJWwIilhe0k9V1NU4qjVqlGrM_GhqQ4TOu5ueP2ulFfqquEoqU8aKvSDsLsg_u-p8vjMAQl6i3KptPpjm0U_bhXJAKcvMEg0E00salyuL1WBvQLxKuxdD6Ub0usJxZpnbJM6HGsGuMMn-X1XgEdZc9xTJz5Zty74krOosZ0LXUPXSl3m_vE80SFGmaJ2KqFjlLCdnORQM2RG3D-aZdqzrJDz_AWNziEmvUZgw89UEM8rRx3LV6zDHzCiXxZ6uCDtBvzP3mMdMi9jet7E4bMjl4pOvfXh-1JLvZEFLgNGeOi9iEw5DCmTwMi-oXXtRTWUYZna4JeYIyoksuq38Dfy9ttfhl5mayp7iSNDyLs2NFYMuZ6CyEvrqjTmgFZEccG0Yvmn9zbW
+2024-11-15 22:38:09.416 +01:00 [INF] GetUserInfo called:
+2024-11-15 22:38:09.423 +01:00 [INF] IsAuthenticated: True
+2024-11-15 22:38:09.428 +01:00 [INF] UserName: mat@mail.no
+2024-11-15 22:38:09.434 +01:00 [INF] Claims: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier: 8df6c300-5642-4f3b-886c-ab5b35131618, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name: mat@mail.no, http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress: mat@mail.no, AspNet.Identity.SecurityStamp: ZKOOAEV6UFQX5UCYRLBA3XDYCB7J6EQZ
+2024-11-15 22:38:09.439 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier = 8df6c300-5642-4f3b-886c-ab5b35131618
+2024-11-15 22:38:09.445 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name = mat@mail.no
+2024-11-15 22:38:09.452 +01:00 [INF] Claim: http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress = mat@mail.no
+2024-11-15 22:38:09.458 +01:00 [INF] Claim: AspNet.Identity.SecurityStamp = ZKOOAEV6UFQX5UCYRLBA3XDYCB7J6EQZ
+2024-11-15 22:38:09.463 +01:00 [INF] Returning response: {"isAuthenticated":true,"userName":"mat@mail.no","manageUrl":"/Identity/Account/Manage","logoutUrl":"/Identity/Account/Logout","loginUrl":"/Identity/Account/Login","registerUrl":"/Identity/Account/Register"}
+2024-11-15 22:38:09.464 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-15 22:38:09.464 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 108.2369ms
+2024-11-15 22:38:09.465 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-15 22:38:09.465 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - 200 null application/json; charset=utf-8 110.4607ms
+2024-11-15 22:38:20.004 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - null null
+2024-11-15 22:38:20.004 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:38:20.005 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - 204 null null 0.9436ms
+2024-11-15 22:38:20.006 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/create - application/json 125
+2024-11-15 22:38:20.009 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:38:20.014 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.Create (api)'
+2024-11-15 22:38:20.014 +01:00 [INF] Route matched with {action = "Create", controller = "ProductAPI", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(FoodRegistrationTool.DTOs.ProductDto) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-15 22:38:20.033 +01:00 [ERR] Failed executing DbCommand (1ms) [Parameters=[@p0='?' (Size = 8), @p1='?', @p2='?', @p3='?' (Size = 3), @p4='?', @p5='?', @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("Category", "Description", "ImageUrl", "Name", "NutriScore", "Nutrition", "Price", "ProducerId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "ProductId";
+2024-11-15 22:38:20.154 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'FoodRegistrationTool.DAL.ProductDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-11-15 22:38:20.238 +01:00 [ERR] [ProductRepository] product creation failed for {"ProductId":0,"Name":"asd","Category":"Beverage","Nutrition":"","Price":9.9,"Description":"","ImageUrl":"","NutriScore":"","ImageFile":null,"ProducerId":1,"$type":"Product"}, error message: An error occurred while saving the entity changes. See the inner exception for details.
+2024-11-15 22:38:20.243 +01:00 [WRN] [ProductAPIController] Product creation failed {"ProductId":0,"Name":"asd","Category":"Beverage","Nutrition":"","Price":9.9,"Description":"","ImageUrl":"","NutriScore":"","ImageFile":null,"ProducerId":1,"$type":"Product"}
+2024-11-15 22:38:20.245 +01:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-11-15 22:38:20.245 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.Create (api) in 230.8341ms
+2024-11-15 22:38:20.246 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.Create (api)'
+2024-11-15 22:38:20.246 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/create - 500 null text/plain; charset=utf-8 239.582ms
+2024-11-15 22:45:03.822 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - null null
+2024-11-15 22:45:03.825 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:45:03.825 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - 204 null null 5.9062ms
+2024-11-15 22:45:03.830 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/create - application/json 125
+2024-11-15 22:45:03.830 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:45:03.833 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.Create (api)'
+2024-11-15 22:45:03.833 +01:00 [INF] Route matched with {action = "Create", controller = "ProductAPI", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(FoodRegistrationTool.DTOs.ProductDto) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-15 22:45:03.855 +01:00 [ERR] Failed executing DbCommand (10ms) [Parameters=[@p0='?' (Size = 8), @p1='?', @p2='?', @p3='?' (Size = 3), @p4='?', @p5='?', @p6='?' (DbType = Decimal), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Products" ("Category", "Description", "ImageUrl", "Name", "NutriScore", "Nutrition", "Price", "ProducerId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7)
+RETURNING "ProductId";
+2024-11-15 22:45:03.874 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'FoodRegistrationTool.DAL.ProductDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.Sqlite.SqliteException (0x80004005): SQLite Error 19: 'FOREIGN KEY constraint failed'.
+   at Microsoft.Data.Sqlite.SqliteException.ThrowExceptionForRC(Int32 rc, sqlite3 db)
+   at Microsoft.Data.Sqlite.SqliteDataReader.NextResult()
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.Data.Sqlite.SqliteCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-11-15 22:45:03.911 +01:00 [ERR] [ProductRepository] product creation failed for {"ProductId":0,"Name":"asd","Category":"Beverage","Nutrition":"","Price":9.9,"Description":"","ImageUrl":"","NutriScore":"","ImageFile":null,"ProducerId":1,"$type":"Product"}, error message: An error occurred while saving the entity changes. See the inner exception for details.
+2024-11-15 22:45:03.913 +01:00 [WRN] [ProductAPIController] Product creation failed {"ProductId":0,"Name":"asd","Category":"Beverage","Nutrition":"","Price":9.9,"Description":"","ImageUrl":"","NutriScore":"","ImageFile":null,"ProducerId":1,"$type":"Product"}
+2024-11-15 22:45:03.914 +01:00 [INF] Executing ObjectResult, writing value of type 'System.String'.
+2024-11-15 22:45:03.914 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.Create (api) in 80.8415ms
+2024-11-15 22:45:03.914 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.Create (api)'
+2024-11-15 22:45:03.914 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/create - 500 null text/plain; charset=utf-8 84.7762ms

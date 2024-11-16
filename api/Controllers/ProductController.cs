@@ -51,7 +51,8 @@ public class ProductAPIController : Controller
             Price = product.Price,
             Description = product.Description,
             NutriScore = product.NutriScore,
-            ImageUrl = product.ImageUrl
+            ImageUrl = product.ImageUrl,
+            ProducerId = product.ProducerId,
 
         });
         return Ok(productDtos);
@@ -73,7 +74,8 @@ public class ProductAPIController : Controller
             ImageUrl = productDto.ImageUrl,
             Category = productDto.Category,
             Nutrition = productDto.Nutrition,
-            NutriScore = productDto.NutriScore
+            NutriScore = productDto.NutriScore,
+            ProducerId = productDto.ProducerId
         };        
         bool returnOk = await _productRepository.Create(newProduct);
         if (returnOk)
@@ -117,6 +119,7 @@ public class ProductAPIController : Controller
         existingProduct.Category = productDto.Category;
         existingProduct.Nutrition = productDto.Nutrition;
         existingProduct.NutriScore = productDto.NutriScore;
+        existingProduct.ProducerId = productDto.ProducerId;
         // Save the changes
         bool updateSuccessful = await _productRepository.Update(existingProduct);
         if (updateSuccessful)
@@ -140,6 +143,8 @@ public class ProductAPIController : Controller
         }
         return NoContent(); // 200 Ok is commonly used when the server returns a response body with additional information about the result of the request. For a DELETE operation, there's generally no need to return additional data, making 204 NoContent a better fit.
     }    
+
+
 
     [HttpPost("calculatescore")]
     public async Task<IActionResult> CalculateNutritionScore([FromBody] NutritionCalculationRequest request)
@@ -193,6 +198,11 @@ public class ProductController : Controller
     public async Task<IActionResult> Table()
     {
         var products = await _productRepository.GetAll();
+        if (products == null)
+        {
+            _logger.LogError("[ProductController] Product list not found while executing _productRepository.GetAll()");
+            return NotFound("Product list not found");
+        }
         var productsViewModel = new ProductsViewModel(products, "Table");
         return View(productsViewModel);
     }
@@ -200,6 +210,11 @@ public class ProductController : Controller
     public async Task<IActionResult> Grid()
     {
         var products = await _productRepository.GetAll();
+        if (products == null)
+        {
+            _logger.LogError("[ProductController] Product list not found while executing _productRepository.GetAll()");
+            return NotFound("Product list not found");
+        }
         var productsViewModel = new ProductsViewModel(products, "Grid");
         return View(productsViewModel);
     }
@@ -209,6 +224,7 @@ public class ProductController : Controller
         var product = await _productRepository.GetProductById(id);
         if (product == null)
         {
+            _logger.LogError("[ProductController] Product not found for the ProductId {ProductId:0000}", id);
             return BadRequest("Product not found.");
         }
         return View(product);
@@ -222,10 +238,34 @@ public class ProductController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Create([Bind("ProductId,Name,Category,Nutrition,NutriScore,Price,Description")] Product product)
+    public async Task<IActionResult> Create([Bind("ProductId,Name,Category,Nutrition,NutriScore,Price,Description, ProducerId")] ProductCreateViewModel productCreateViewModel)
     {
+        // Må legge inn Logger her
         if (ModelState.IsValid)
         {
+            // Getting producer by Id
+            var producer = await _productRepository.GetProducerById(productCreateViewModel.ProducerId);
+
+            // Checking producer exists
+            
+            if (producer == null)
+            {
+                return BadRequest("Producer not found.");
+            }
+            
+            
+            // Creating Product object
+            var product = new Product
+            {
+                Name = productCreateViewModel.Name,
+                Category = productCreateViewModel.Category,
+                Nutrition = productCreateViewModel.Nutrition,
+                Price = productCreateViewModel.Price,
+                Description = productCreateViewModel.Description,
+                NutriScore = productCreateViewModel.NutriScore,
+                ProducerId = productCreateViewModel.ProducerId,
+                Producer = producer // Sett produsenten til produktet
+            };
             
             // Handle Image Upload
             var imageFile = Request.Form.Files.FirstOrDefault();
@@ -248,22 +288,13 @@ public class ProductController : Controller
             else
             {
                 Console.Write($"No img found, url: {product.ImageUrl}, imgfile: {product.ImageFile}");
-
             }
 
             // Save product to DB
-            bool returnOk = await _productRepository.Create(product);
-            if (returnOk)
-                return RedirectToAction(nameof(Table));
-            
-            /*
-            bool returnOk = await _productRepository.Create(product);
-            if (returnOk)
-                return RedirectToAction(nameof(Table));
-            */
+            await _productRepository.Create(product);
+            return RedirectToAction(nameof(Table));
         }
-        _logger.LogWarning("[ProductController] creation failed {@product}", product);
-        return View(product);
+        return View(productCreateViewModel);
     }
 
     [HttpGet]

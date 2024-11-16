@@ -27,6 +27,7 @@ const ProductForm: React.FC<ProductFormProps> = ({
   const [category, setCategory] = useState('');//<string>(initialData?.category || '');
   const [nutrition, setNutrition] = useState('');//<string>(initialData?.nutrition || '');
   const [nutriScore, setNutriScore] = useState<string>(initialData?.nutriScore || '');
+  const [producerId, setProducerId] = useState<number>(initialData?.producerId || 0);
   //const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
 
@@ -77,7 +78,7 @@ const ProductForm: React.FC<ProductFormProps> = ({
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    const product: Product = { productId, name, category, nutrition, nutriScore, price, description, imageUrl };
+    const product: Product = { productId, name, category, nutrition, nutriScore, price, description, imageUrl, producerId };
     onProductChanged(product); // Call the passed function with the product data
   };
 
@@ -90,6 +91,16 @@ const ProductForm: React.FC<ProductFormProps> = ({
 
   return (
     <Form onSubmit={handleSubmit}>
+      <Form.Group controlId='formProducerId'>
+        <Form.Label>Producer Id</Form.Label>
+        <Form.Control
+          type='number'
+          placeholder='Enter producers id'
+          value={producerId}
+          onChange={(e) => setProducerId(Number(e.target.value))}
+          required
+        ></Form.Control>
+      </Form.Group>
       <Form.Group controlId="formProductName">
         <Form.Label>Name</Form.Label>
         <Form.Control

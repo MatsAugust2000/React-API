@@ -7,5 +7,6 @@ export interface Product {
     description: string;
     imageUrl: string;
     nutriScore: string;
+    producerId: number;
 
 }

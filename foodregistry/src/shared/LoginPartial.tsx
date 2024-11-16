@@ -34,7 +34,7 @@ const LoginPartial: React.FC = () => {
     }
 
     return (
-        <Nav className="ms-auto" style={{width: '100px'}}>
+        <Nav className="ms-auto" style={{}}>
             {isAuthenticated ? (
                 <>
                   <NavDropdown

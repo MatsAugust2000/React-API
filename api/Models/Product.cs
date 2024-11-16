@@ -28,8 +28,11 @@ namespace FoodRegistrationTool.Models
         [Display(Name = "Upload Image")]
         public IFormFile? ImageFile { get; set; }
 
+        // Foreign key
+        public int ProducerId { get; set; }
+
         // Navigation property
-        //public virtual List<ProductRegister>? ProductRegisters { get; set; }
+        public virtual Producer Producer { get; set; } = default!;
 
         // Hvis det legges til nye klasser, kjør følgende i terminal (se async modulen i canvas):
         // dotnet ef migrations add FoodRegistryDbExpanded
