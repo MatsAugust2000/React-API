@@ -78,7 +78,7 @@ const ProductListPage: React.FC = () => {
       <h1>Products</h1>
       <Button onClick={fetchProducts} className="btn btn-primary mb-3 me-2" disabled={loading}>
         <i className="bi bi-arrow-clockwise"></i> 
-        {loading ? ' Loading...' : ' Refresh Products'}
+        {loading ? ' Loading...' : ' Refresh'}
       </Button>
       <Button onClick={toggleTableOrGrid} className="btn btn-primary mb-3 me-2">
         {showTable ? <i className="bi bi-grid"></i> : <i className="bi bi-list-ul"></i>}

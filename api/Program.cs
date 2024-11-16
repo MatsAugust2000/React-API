@@ -162,7 +162,7 @@ if (!app.Environment.IsDevelopment())
 
 if (app.Environment.IsDevelopment())
 {
-    DBInit.Seed(app);
+    //DBInit.Seed(app);
     app.UseSwagger();
     app.UseSwaggerUI();
     

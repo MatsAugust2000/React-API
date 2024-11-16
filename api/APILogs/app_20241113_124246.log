@@ -1,0 +1,170 @@
+2024-11-13 12:42:48.954 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-13 12:42:49.413 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-13 12:42:49.418 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-13 12:42:49.428 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-13 12:42:49.434 +01:00 [INF] Hosting environment: Development
+2024-11-13 12:42:49.439 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-13 12:42:50.606 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/Login?ReturnUrl=http%3A%2F%2Flocalhost%3A3000 - null null
+2024-11-13 12:42:50.676 +01:00 [INF] Executing endpoint '/Account/Login'
+2024-11-13 12:42:50.724 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-11-13 12:42:50.754 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-11-13 12:42:50.760 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-11-13 12:42:50.761 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-13 12:42:50.764 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-13 12:42:50.764 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-13 12:42:50.903 +01:00 [INF] Executed page /Account/Login in 173.5966ms
+2024-11-13 12:42:50.905 +01:00 [INF] Executed endpoint '/Account/Login'
+2024-11-13 12:42:50.914 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/Login?ReturnUrl=http%3A%2F%2Flocalhost%3A3000 - 200 null text/html; charset=utf-8 309.3312ms
+2024-11-13 12:42:54.681 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - null null
+2024-11-13 12:42:54.694 +01:00 [INF] CORS policy execution successful.
+2024-11-13 12:42:54.700 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-13 12:42:54.725 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-13 12:42:54.753 +01:00 [INF] Authentication result: False
+2024-11-13 12:42:54.756 +01:00 [INF] Request path: /api/Auth/userinfo
+2024-11-13 12:42:54.758 +01:00 [INF] Request method: GET
+2024-11-13 12:42:54.761 +01:00 [INF] Request scheme: http
+2024-11-13 12:42:54.764 +01:00 [INF] Auth Type: 
+2024-11-13 12:42:54.767 +01:00 [INF] Identity Name: 
+2024-11-13 12:42:54.771 +01:00 [INF] User from UserManager: null
+2024-11-13 12:42:54.774 +01:00 [INF] Cookies received: .AspNetCore.Antiforgery.lR7t4MXUUZs=CfDJ8FYKQg2-tzVDp03-Gqv4Alp0e2kDKTpS7ycju9zsrFEctUbGhXGgm-TR2OGRtNiDSW2-yLD_U9ztu3gK8l94pzxhlcgICY-WqKInqucCSG5DxX1CJdczsvzTSLcIdT395LhAveMj_2LRO4FR08fdmRA, .AspNetCore.Antiforgery.dw7AqgzwEUQ=CfDJ8FYKQg2-tzVDp03-Gqv4AlpuJ5WrZvfgIbXDPlmvconEJ-859cdE6UsmGy6Ny_h3xsB8bbMaYwmszbCZtWzqapxdW81rlL4KfGCSslVgx3lRLADMmzN7o6yVPQJ44NQ3MnhGpLSl3G4_OADRKjpKDNY
+2024-11-13 12:42:54.776 +01:00 [INF] GetUserInfo called:
+2024-11-13 12:42:54.779 +01:00 [INF] IsAuthenticated: False
+2024-11-13 12:42:54.781 +01:00 [INF] UserName: 
+2024-11-13 12:42:54.784 +01:00 [INF] Claims: 
+2024-11-13 12:42:54.803 +01:00 [INF] Returning response: {"isAuthenticated":false,"userName":null,"manageUrl":"/Identity/Account/Manage","logoutUrl":"/Identity/Account/Logout","loginUrl":"/Identity/Account/Login","registerUrl":"/Identity/Account/Register"}
+2024-11-13 12:42:54.808 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-13 12:42:54.812 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 86.0503ms
+2024-11-13 12:42:54.812 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-13 12:42:54.813 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - 200 null application/json; charset=utf-8 132.7542ms
+2024-11-13 12:42:54.813 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - null null
+2024-11-13 12:42:54.816 +01:00 [INF] CORS policy execution successful.
+2024-11-13 12:42:54.816 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-13 12:42:54.817 +01:00 [INF] Route matched with {action = "GetUserInfo", controller = "Auth", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUserInfo() on controller FoodRegistrationTool.Controllers.AuthController (api).
+2024-11-13 12:42:54.821 +01:00 [INF] Authentication result: False
+2024-11-13 12:42:54.823 +01:00 [INF] Request path: /api/Auth/userinfo
+2024-11-13 12:42:54.826 +01:00 [INF] Request method: GET
+2024-11-13 12:42:54.829 +01:00 [INF] Request scheme: http
+2024-11-13 12:42:54.831 +01:00 [INF] Auth Type: 
+2024-11-13 12:42:54.835 +01:00 [INF] Identity Name: 
+2024-11-13 12:42:54.837 +01:00 [INF] User from UserManager: null
+2024-11-13 12:42:54.840 +01:00 [INF] Cookies received: .AspNetCore.Antiforgery.lR7t4MXUUZs=CfDJ8FYKQg2-tzVDp03-Gqv4Alp0e2kDKTpS7ycju9zsrFEctUbGhXGgm-TR2OGRtNiDSW2-yLD_U9ztu3gK8l94pzxhlcgICY-WqKInqucCSG5DxX1CJdczsvzTSLcIdT395LhAveMj_2LRO4FR08fdmRA, .AspNetCore.Antiforgery.dw7AqgzwEUQ=CfDJ8FYKQg2-tzVDp03-Gqv4AlpuJ5WrZvfgIbXDPlmvconEJ-859cdE6UsmGy6Ny_h3xsB8bbMaYwmszbCZtWzqapxdW81rlL4KfGCSslVgx3lRLADMmzN7o6yVPQJ44NQ3MnhGpLSl3G4_OADRKjpKDNY
+2024-11-13 12:42:54.842 +01:00 [INF] GetUserInfo called:
+2024-11-13 12:42:54.845 +01:00 [INF] IsAuthenticated: False
+2024-11-13 12:42:54.847 +01:00 [INF] UserName: 
+2024-11-13 12:42:54.849 +01:00 [INF] Claims: 
+2024-11-13 12:42:54.852 +01:00 [INF] Returning response: {"isAuthenticated":false,"userName":null,"manageUrl":"/Identity/Account/Manage","logoutUrl":"/Identity/Account/Logout","loginUrl":"/Identity/Account/Login","registerUrl":"/Identity/Account/Register"}
+2024-11-13 12:42:54.852 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType10`6[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-11-13 12:42:54.853 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api) in 35.9243ms
+2024-11-13 12:42:54.853 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.AuthController.GetUserInfo (api)'
+2024-11-13 12:42:54.853 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/api/Auth/userinfo - 200 null application/json; charset=utf-8 39.9449ms
+2024-11-13 12:42:58.094 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/Register?ReturnUrl=http%3A%2F%2Flocalhost%3A3000 - null null
+2024-11-13 12:42:58.098 +01:00 [INF] Executing endpoint '/Account/Register'
+2024-11-13 12:42:58.106 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2024-11-13 12:42:58.108 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.RegisterModel.OnGetAsync - ModelState is "Valid"
+2024-11-13 12:42:58.109 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-13 12:42:58.109 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-13 12:42:58.109 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-13 12:42:58.134 +01:00 [INF] Executed page /Account/Register in 28.2037ms
+2024-11-13 12:42:58.134 +01:00 [INF] Executed endpoint '/Account/Register'
+2024-11-13 12:42:58.135 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/Register?ReturnUrl=http%3A%2F%2Flocalhost%3A3000 - 200 null text/html; charset=utf-8 40.7733ms
+2024-11-13 12:43:06.365 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/Login - null null
+2024-11-13 12:43:06.365 +01:00 [INF] Executing endpoint '/Account/Login'
+2024-11-13 12:43:06.366 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-11-13 12:43:06.367 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-11-13 12:43:06.368 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-11-13 12:43:06.368 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-13 12:43:06.368 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-13 12:43:06.368 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-13 12:43:06.372 +01:00 [INF] Executed page /Account/Login in 6.5019ms
+2024-11-13 12:43:06.373 +01:00 [INF] Executed endpoint '/Account/Login'
+2024-11-13 12:43:06.373 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/Login - 200 null text/html; charset=utf-8 8.1262ms
+2024-11-13 12:43:11.189 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/Register?returnUrl=%2F - null null
+2024-11-13 12:43:11.189 +01:00 [INF] Executing endpoint '/Account/Register'
+2024-11-13 12:43:11.190 +01:00 [INF] Route matched with {page = "/Account/Register", area = "Identity", action = "", controller = ""}. Executing page /Account/Register
+2024-11-13 12:43:11.190 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.RegisterModel.OnGetAsync - ModelState is "Valid"
+2024-11-13 12:43:11.191 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-13 12:43:11.191 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-13 12:43:11.191 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-13 12:43:11.194 +01:00 [INF] Executed page /Account/Register in 4.0404ms
+2024-11-13 12:43:11.194 +01:00 [INF] Executed endpoint '/Account/Register'
+2024-11-13 12:43:11.194 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/Register?returnUrl=%2F - 200 null text/html; charset=utf-8 5.4712ms
+2024-11-13 12:43:13.125 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/Login - null null
+2024-11-13 12:43:13.126 +01:00 [INF] Executing endpoint '/Account/Login'
+2024-11-13 12:43:13.127 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-11-13 12:43:13.127 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-11-13 12:43:13.128 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-11-13 12:43:13.128 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-13 12:43:13.128 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-13 12:43:13.128 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-13 12:43:13.131 +01:00 [INF] Executed page /Account/Login in 4.3544ms
+2024-11-13 12:43:13.131 +01:00 [INF] Executed endpoint '/Account/Login'
+2024-11-13 12:43:13.132 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/Login - 200 null text/html; charset=utf-8 6.205ms
+2024-11-13 12:43:15.008 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/ResendEmailConfirmation - null null
+2024-11-13 12:43:15.009 +01:00 [INF] Executing endpoint '/Account/ResendEmailConfirmation'
+2024-11-13 12:43:15.015 +01:00 [INF] Route matched with {page = "/Account/ResendEmailConfirmation", area = "Identity", action = "", controller = ""}. Executing page /Account/ResendEmailConfirmation
+2024-11-13 12:43:15.018 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.ResendEmailConfirmationModel.OnGet - ModelState is "Valid"
+2024-11-13 12:43:15.018 +01:00 [INF] Executed handler method OnGet, returned result .
+2024-11-13 12:43:15.018 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-13 12:43:15.018 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-13 12:43:15.029 +01:00 [INF] Executed page /Account/ResendEmailConfirmation in 13.4907ms
+2024-11-13 12:43:15.029 +01:00 [INF] Executed endpoint '/Account/ResendEmailConfirmation'
+2024-11-13 12:43:15.029 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/ResendEmailConfirmation - 200 null text/html; charset=utf-8 21.1508ms
+2024-11-13 12:43:16.575 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/Login - null null
+2024-11-13 12:43:16.575 +01:00 [INF] Executing endpoint '/Account/Login'
+2024-11-13 12:43:16.575 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-11-13 12:43:16.576 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-11-13 12:43:16.576 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-11-13 12:43:16.576 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-13 12:43:16.576 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-13 12:43:16.576 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-13 12:43:16.578 +01:00 [INF] Executed page /Account/Login in 2.665ms
+2024-11-13 12:43:16.578 +01:00 [INF] Executed endpoint '/Account/Login'
+2024-11-13 12:43:16.578 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/Login - 200 null text/html; charset=utf-8 3.4809ms
+2024-11-13 12:43:19.886 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/ForgotPassword - null null
+2024-11-13 12:43:19.887 +01:00 [INF] Executing endpoint '/Account/ForgotPassword'
+2024-11-13 12:43:19.892 +01:00 [INF] Route matched with {page = "/Account/ForgotPassword", area = "Identity", action = "", controller = ""}. Executing page /Account/ForgotPassword
+2024-11-13 12:43:19.893 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-13 12:43:19.893 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-13 12:43:19.904 +01:00 [INF] Executed page /Account/ForgotPassword in 11.7105ms
+2024-11-13 12:43:19.904 +01:00 [INF] Executed endpoint '/Account/ForgotPassword'
+2024-11-13 12:43:19.904 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/ForgotPassword - 200 null text/html; charset=utf-8 17.8781ms
+2024-11-13 12:43:22.620 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/Login - null null
+2024-11-13 12:43:22.620 +01:00 [INF] Executing endpoint '/Account/Login'
+2024-11-13 12:43:22.621 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-11-13 12:43:22.621 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-11-13 12:43:22.621 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-11-13 12:43:22.621 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-13 12:43:22.621 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-13 12:43:22.621 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-13 12:43:22.623 +01:00 [INF] Executed page /Account/Login in 2.3943ms
+2024-11-13 12:43:22.623 +01:00 [INF] Executed endpoint '/Account/Login'
+2024-11-13 12:43:22.624 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/Login - 200 null text/html; charset=utf-8 3.5133ms
+2024-11-13 12:45:48.355 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/ForgotPassword - null null
+2024-11-13 12:45:48.356 +01:00 [INF] Executing endpoint '/Account/ForgotPassword'
+2024-11-13 12:45:48.356 +01:00 [INF] Route matched with {page = "/Account/ForgotPassword", area = "Identity", action = "", controller = ""}. Executing page /Account/ForgotPassword
+2024-11-13 12:45:48.357 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-13 12:45:48.357 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-13 12:45:48.368 +01:00 [INF] Executed page /Account/ForgotPassword in 11.7431ms
+2024-11-13 12:45:48.368 +01:00 [INF] Executed endpoint '/Account/ForgotPassword'
+2024-11-13 12:45:48.370 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/ForgotPassword - 200 null text/html; charset=utf-8 14.9636ms
+2024-11-13 12:46:41.515 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/Login - null null
+2024-11-13 12:46:41.516 +01:00 [INF] Executing endpoint '/Account/Login'
+2024-11-13 12:46:41.516 +01:00 [INF] Route matched with {page = "/Account/Login", area = "Identity", action = "", controller = ""}. Executing page /Account/Login
+2024-11-13 12:46:41.517 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.LoginModel.OnGetAsync - ModelState is "Valid"
+2024-11-13 12:46:41.517 +01:00 [INF] AuthenticationScheme: Identity.External signed out.
+2024-11-13 12:46:41.517 +01:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-11-13 12:46:41.517 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-13 12:46:41.517 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-13 12:46:41.519 +01:00 [INF] Executed page /Account/Login in 3.3379ms
+2024-11-13 12:46:41.520 +01:00 [INF] Executed endpoint '/Account/Login'
+2024-11-13 12:46:41.520 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/Login - 200 null text/html; charset=utf-8 4.9731ms
+2024-11-13 12:46:54.845 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5194/Identity/Account/ResendEmailConfirmation - null null
+2024-11-13 12:46:54.846 +01:00 [INF] Executing endpoint '/Account/ResendEmailConfirmation'
+2024-11-13 12:46:54.846 +01:00 [INF] Route matched with {page = "/Account/ResendEmailConfirmation", area = "Identity", action = "", controller = ""}. Executing page /Account/ResendEmailConfirmation
+2024-11-13 12:46:54.847 +01:00 [INF] Executing handler method api.Areas.Identity.Pages.Account.ResendEmailConfirmationModel.OnGet - ModelState is "Valid"
+2024-11-13 12:46:54.847 +01:00 [INF] Executed handler method OnGet, returned result .
+2024-11-13 12:46:54.847 +01:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-11-13 12:46:54.847 +01:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-11-13 12:46:54.850 +01:00 [INF] Executed page /Account/ResendEmailConfirmation in 3.564ms
+2024-11-13 12:46:54.850 +01:00 [INF] Executed endpoint '/Account/ResendEmailConfirmation'
+2024-11-13 12:46:54.851 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5194/Identity/Account/ResendEmailConfirmation - 200 null text/html; charset=utf-8 5.6145ms

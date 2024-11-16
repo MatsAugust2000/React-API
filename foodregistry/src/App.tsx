@@ -10,6 +10,10 @@ import { AuthProvider } from './shared/AuthContext';
 import ProtectedRoute from './shared/ProtectedRoute';
 import ProductDetailsContainer from './products/ProductDetails';
 import Footer from './shared/Footer';
+import ProducerListPage from './producers/ProducerListPage';
+import ProducerCreatePage from './producers/ProducerCreatePage';
+import ProducerUpdatePage from './producers/ProducerUpdatePage';
+
 
 const App: React.FC = () => {
   return (
@@ -26,6 +30,12 @@ const App: React.FC = () => {
                     <Route path='/productcreate' element={<ProtectedRoute> <ProductCreatePage /> </ProtectedRoute>}/>
                     <Route path='/productupdate/:productId' element={<ProtectedRoute> <ProductUpdatePage /> </ProtectedRoute>}/>
                     <Route path="/productdetails/:productId" element={<ProductDetailsContainer />} />
+                    <Route path="/producers" element={<ProducerListPage />} />
+                    <Route path="/producercreate" element={<ProtectedRoute> <ProducerCreatePage /> </ProtectedRoute>} />
+                    <Route path="/producerupdate/:producerId" element={<ProtectedRoute> <ProducerUpdatePage /> </ProtectedRoute>} />
+
+
+
                     <Route path='*' element={<Navigate to='/' replace />} />
                   </Routes>
                 </Container>

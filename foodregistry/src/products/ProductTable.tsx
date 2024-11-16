@@ -22,14 +22,26 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, apiUrl, onProduct
   const [showImages, setShowImages] = useState<boolean>(true);
   const [showDescriptions, setShowDescriptions] = useState<boolean>(true);
   const [showNutrition, setShowNutrition] = useState<boolean>(true);
-  //const toggleImages = () => setShowImages(prevShowImages => !prevShowImages);
-  //const toggleDescriptions = () => setShowDescriptions(prevShowDescriptions => !prevShowDescriptions);
+  const [showId, setShowId] = useState<boolean>(false);
+  const [showSharePopup, setShowSharePopup] = useState<boolean>(false); 
 
+  const handleShareClick = (productId: number) => {
+    setShowSharePopup(true);
+  }
+  
 
   return (
     <Container fluid>
       <Row className="mb-3">
         <Col>
+        <Button 
+            onClick={() => setShowId(!showId)} 
+            className="btn btn-primary me-2"
+            size="sm"
+          >
+            <i className="bi bi-list-ol"></i>
+            {showId ? ' Hide' : ' Show'}
+          </Button>
           <Button 
             onClick={() => setShowDescriptions(!showDescriptions)} 
             className="btn btn-primary me-2"
@@ -68,7 +80,7 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, apiUrl, onProduct
             >
               <thead className="bg-light">
                 <tr>
-                  <th className="align-middle">ID</th>
+                  {showId && <th className="align-middle">ID</th>}
                   <th className="align-middle">Name</th>
                   {showImages && <th className="align-middle">Image</th>}
                   {showDescriptions && <th className="align-middle">Description</th>}
@@ -82,7 +94,9 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, apiUrl, onProduct
               <tbody>
                 {products.map(product => (
                   <tr key={product.productId}>
-                    <td className="align-middle">{product.productId}</td>
+                    {showId && (
+                      <td className="align-middle">{product.productId}</td>
+                    )}
                     <td className="align-middle fw-bold">
                       <Link 
                         to={`/productdetails/${product.productId}`}
@@ -91,6 +105,7 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, apiUrl, onProduct
                         {product.name}
                       </Link>
                     </td>
+
                     {showImages && (
                       <td className="align-middle text-center">
                         <Link 
@@ -135,6 +150,12 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, apiUrl, onProduct
                       >
                         <i className="bi bi-pencil-square"></i> Update
                       </Link>
+                      <Button 
+                        onClick={() => handleShareClick(product.productId)}
+                        className="btn btn-primary btn-sm me-2"
+                      >
+                        <i className="bi bi-share"></i> Share
+                      </Button>
                       <Button
                         variant="outline-danger"
                         size="sm"
@@ -145,11 +166,30 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, apiUrl, onProduct
                       </td>
                   </tr>
                 ))}
-              </tbody>
+              </tbody>              
             </Table>
           </div>
         </Col>
       </Row>
+      {showSharePopup && (
+                <div className="share-popup">
+                <h5>Share this product</h5>
+                <Button 
+                  variant="link" 
+                  onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_blank')}
+                ><i className="bi bi-facebook"></i> 
+                </Button>
+                <Button 
+                  variant="link" 
+                  onClick={() => window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}`, '_blank')}
+                ><i className="bi bi-twitter" ></i> 
+                </Button>
+                <br></br>
+                <br></br>
+                <Button className='btn btn-secondary btn-sm' onClick={() => setShowSharePopup(false)}>Close</Button>
+              </div>
+            )}
+
     </Container>
   );
 };

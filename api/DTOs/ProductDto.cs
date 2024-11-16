@@ -31,5 +31,12 @@ namespace FoodRegistrationTool.DTOs
         public IFormFile? ImageFile { get; set; }
 
         public string? ImageUrl { get; set; }
+
+        // Foreign key
+        public int ProducerId { get; set; }
+
+        // Navigation property
+        //public virtual ProducerDto Producer { get; set; } = default!;
+
     }
 }

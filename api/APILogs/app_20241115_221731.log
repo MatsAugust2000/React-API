@@ -1,0 +1,39 @@
+2024-11-15 22:17:32.151 +01:00 [INF] User profile is available. Using 'C:\Users\Mats\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-11-15 22:17:32.611 +01:00 [INF] Now listening on: https://localhost:7263
+2024-11-15 22:17:32.614 +01:00 [INF] Now listening on: http://localhost:5194
+2024-11-15 22:17:32.621 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-15 22:17:32.624 +01:00 [INF] Hosting environment: Development
+2024-11-15 22:17:32.627 +01:00 [INF] Content root path: C:\Users\Mats\web-projects\react\exam\api
+2024-11-15 22:17:39.462 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - null null
+2024-11-15 22:17:39.600 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:17:39.619 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - 204 null null 162.1202ms
+2024-11-15 22:17:39.632 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/create - application/json 215
+2024-11-15 22:17:39.648 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:17:39.700 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.Create (api)'
+2024-11-15 22:17:39.735 +01:00 [INF] Route matched with {action = "Create", controller = "ProductAPI", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(FoodRegistrationTool.DTOs.ProductDto) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-15 22:17:40.040 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-15 22:17:40.073 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.Create (api) in 330.0879ms
+2024-11-15 22:17:40.073 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.Create (api)'
+2024-11-15 22:17:40.087 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/create - 400 null application/problem+json; charset=utf-8 455.0632ms
+2024-11-15 22:21:27.372 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - null null
+2024-11-15 22:21:27.374 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:21:27.374 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/calculatescore - 204 null null 2.3133ms
+2024-11-15 22:21:27.383 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - application/json 110
+2024-11-15 22:21:27.385 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:21:27.389 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-15 22:21:27.397 +01:00 [INF] Route matched with {action = "CalculateNutritionScore", controller = "ProductAPI", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateNutritionScore(NutritionCalculationRequest) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-15 22:21:27.455 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-11-15 22:21:27.456 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api) in 58.3298ms
+2024-11-15 22:21:27.456 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.CalculateNutritionScore (api)'
+2024-11-15 22:21:27.456 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/calculatescore - 200 null text/plain; charset=utf-8 73.8267ms
+2024-11-15 22:21:29.114 +01:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - null null
+2024-11-15 22:21:29.115 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:21:29.115 +01:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5194/api/productapi/create - 204 null null 1.1438ms
+2024-11-15 22:21:29.117 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5194/api/productapi/create - application/json 215
+2024-11-15 22:21:29.118 +01:00 [INF] CORS policy execution successful.
+2024-11-15 22:21:29.122 +01:00 [INF] Executing endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.Create (api)'
+2024-11-15 22:21:29.122 +01:00 [INF] Route matched with {action = "Create", controller = "ProductAPI", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(FoodRegistrationTool.DTOs.ProductDto) on controller FoodRegistrationTool.Controllers.ProductAPIController (api).
+2024-11-15 22:21:29.128 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-15 22:21:29.129 +01:00 [INF] Executed action FoodRegistrationTool.Controllers.ProductAPIController.Create (api) in 6.2012ms
+2024-11-15 22:21:29.129 +01:00 [INF] Executed endpoint 'FoodRegistrationTool.Controllers.ProductAPIController.Create (api)'
+2024-11-15 22:21:29.129 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5194/api/productapi/create - 400 null application/problem+json; charset=utf-8 11.734ms

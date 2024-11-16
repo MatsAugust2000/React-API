@@ -26,7 +26,8 @@ public static class DBInit
                     Nutrition = "Calories: 100kcal, SaturatedFat: 10g, Sugar: 10g, Salt: 100mg, Fibre: g, Protein: g, FruitOrVeg: %",
                     NutriScore = "D",
                     Description = "Delicious Italian dish with a thin crust topped with tomato sauce, cheese, and various toppings.",
-                    ImageUrl = "/images/pizza.jpg"
+                    ImageUrl = "/images/pizza.jpg",
+                    ProducerId = '1'
                 },
                 new Product
                 {
@@ -36,7 +37,8 @@ public static class DBInit
                     Nutrition = "Calories: 100kcal, SaturatedFat: 10g, Sugar: 10g, Salt: 100mg, Fibre: g, Protein: g, FruitOrVeg: %",
                     NutriScore = "C",
                     Description = "Crispy and succulent chicken leg that is deep-fried to perfection, often served as a popular fast food item.",
-                    ImageUrl = "/images/chickenleg.jpg"
+                    ImageUrl = "/images/chickenleg.jpg",
+                    ProducerId = '1'
                 },
                 new Product
                 {
@@ -46,7 +48,9 @@ public static class DBInit
                     Nutrition = "Calories: 100kcal, SaturatedFat: 10g, Sugar: 10g, Salt: 100mg, Fibre: g, Protein: g, FruitOrVeg: %",
                     NutriScore = "E",
                     Description = "Crispy, golden-brown potato slices seasoned with salt and often served as a popular side dish or snack.",
-                    ImageUrl = "/images/frenchfries.jpg"
+                    ImageUrl = "/images/frenchfries.jpg",
+                    ProducerId = '1'
+
                 },
                 new Product
                 {
@@ -56,7 +60,9 @@ public static class DBInit
                     Nutrition = "Calories: 100kcal, SaturatedFat: 10g, Sugar: 10g, Salt: 100mg, Fibre: g, Protein: g, FruitOrVeg: %",
                     NutriScore = "C",
                     Description = "Tender and flavorful ribs grilled to perfection, usually served with barbecue sauce.",
-                    ImageUrl = "/images/ribs.jpg"
+                    ImageUrl = "/images/ribs.jpg",
+                    ProducerId = '1'
+
                 },
                 new Product
                 {
@@ -66,7 +72,9 @@ public static class DBInit
                     Nutrition = "Calories: 100kcal, SaturatedFat: 10g, Sugar: 10g, Salt: 100mg, Fibre: g, Protein: g, FruitOrVeg: %",
                     NutriScore = "D",
                     Description = "Tortillas filled with various ingredients such as seasoned meat, vegetables, and salsa, folded into a delicious handheld meal.",
-                    ImageUrl = "/images/tacos.jpg"
+                    ImageUrl = "/images/tacos.jpg",
+                    ProducerId = '1'
+
                 },
                 new Product
                 {
@@ -76,7 +84,9 @@ public static class DBInit
                     Nutrition = "Calories: 100kcal, SaturatedFat: 10g, Sugar: 10g, Salt: 100mg, Fibre: g, Protein: g, FruitOrVeg: %",
                     NutriScore = "B",
                     Description = "Classic British dish featuring battered and deep-fried fish served with thick-cut fried potatoes.",
-                    ImageUrl = "/images/fishandchips.jpg"
+                    ImageUrl = "/images/fishandchips.jpg",
+                    ProducerId = '1'
+
                 },
                 new Product
                 {
@@ -86,7 +96,9 @@ public static class DBInit
                     Nutrition = "Calories: 100kcal, SaturatedFat: 10g, Sugar: 10g, Salt: 100mg, Fibre: g, Protein: g, FruitOrVeg: %",
                     NutriScore = "C",
                     Description = "Refreshing alcoholic beverage made from fermented apple juice, available in various flavors.",
-                    ImageUrl = "/images/cider.jpg"
+                    ImageUrl = "/images/cider.jpg",
+                    ProducerId = '1'
+
                 },
                 new Product
                 {
@@ -96,7 +108,8 @@ public static class DBInit
                     Nutrition = "Calories: 100kcal, SaturatedFat: 10g, Sugar: 10g, Salt: 100mg, Fibre: g, Protein: g, FruitOrVeg: %",
                     NutriScore = "D",
                     Description = "Popular carbonated soft drink known for its sweet and refreshing taste.",
-                    ImageUrl = "/images/coke.jpg"
+                    ImageUrl = "/images/coke.jpg",
+                    ProducerId = '1'
                 },
             };
             context.AddRange(products);
