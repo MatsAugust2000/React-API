@@ -1,15 +1,16 @@
 # itpe3200
 Hjemmeeksamen i ITPE320 - Webapplikasjoner
 
-NB!
-Etter å ha lagt til nye klasser under Controller og Models-mappene, utfør følgende kommandoer i terminalen for å unngå feilmeldinger under build og for å holde migrations og DB oppdatert:
+Launch app:
+API (ASP.NET) - f5 (debug) alternatively - dotnet build api/api.csproj
+Frontend (React) - npm start (in React directory)
 
-dotnet ef migrations add FoodRegistryDbExpanded + tall
-
-dotnet ef database update
+Info:
+The auth is provided by .NET scaffolding and cookies. So the browser may remember the user and may log in with said user automatically even in a new session where the DB is deleted.
+ Clear cookies for the browser for complete removal of user. 
 
 TODO: 
-Build -
+Build warnings -
 ProductController.cs(196,55): warning CS8604: Possible null reference argument for parameter 'products' in -
     'ProductsViewModel.ProductsViewModel(IEnumerable<Product> products, string? currentViewName)'.
 ProductController.cs(203,55): warning CS8604: Possible null reference argument for parameter 'products'.
