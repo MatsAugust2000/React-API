@@ -46,7 +46,7 @@ export const createProducer = async (producer: any) => {
 };
 // Put update producer
 export const updateProducer = async (producerId: number, producer: any) => {
-  const response = await fetch(`${API_URL}/api/producer/update/${producerId}`, {
+  const response = await fetch(`${API_URL}/api/producerapi/update/${producerId}`, {
     method: 'PUT',
     headers:{
       'Content-Type': 'application/json'
