@@ -9,7 +9,7 @@ public class ProductDbContext : IdentityDbContext
     public ProductDbContext(DbContextOptions<ProductDbContext> options) : base(options)
     {
         // Fjern hvis vi benytter migrasjon
-        //Database.EnsureCreated();
+        Database.EnsureCreated();
     }
 
     public DbSet<Product> Products { get; set; }

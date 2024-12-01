@@ -99,6 +99,7 @@ public class ProducerAPIController : Controller
         }
         // Update the producer properties
         existingProducer.Name = producerDto.Name;
+        existingProducer.Address = producerDto.Address;
 
         // Save the changes
         bool updateSuccessful = await _productRepository.UpdateProducer(existingProducer);

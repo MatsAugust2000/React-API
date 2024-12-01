@@ -16,7 +16,7 @@ export const getScoreClass = (score: string): string => {
 };
   
 const ProducerTable: React.FC<ProducerTableProps> = ({ producers, products, apiUrl, onProducerDeleted }) => {
-    const [showId, setShowId] = useState<boolean>(false);
+    const [showId, setShowId] = useState<boolean>(true);
     const [showProducts, setShowProducts] = useState<boolean>(false);
     return (
         <Container fluid>
@@ -65,14 +65,7 @@ const ProducerTable: React.FC<ProducerTableProps> = ({ producers, products, apiU
                         {showId && (
                         <td className="align-middle">{producer.producerId}</td>
                         )}
-                        <td className="align-middle fw-bold">
-                      <Link 
-                        to={`/producerdetails/${producer.producerId}`}
-                        className='text-decoration-none'
-                      >
-                        {producer.name}
-                      </Link>
-                    </td>
+                        <td className="align-middle fw-bold">{producer.name}</td>
                     <td className='align-middle'>{producer.address}</td>
                     <td className="align-middle text-center">
                       <Link 
